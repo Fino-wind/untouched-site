@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keepsake — 把丢不起的原件留在本机</title>
+<meta name="description" content="iCloud 的「优化 iPhone 储存空间」会把本机原件清掉，只留一个模糊预览。Keepsake 把你指定的照片和视频的原始文件复制到它清不掉的地方。">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #edf0f6;
+    --text: #1c1c1e;
+    --muted: #6b7280;
+    --accent: #007aff;
+    --line: #e3e7ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --surface: #1c1c1e;
+      --text: #f2f2f7;
+      --muted: #98989f;
+      --accent: #0a84ff;
+      --line: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "PingFang SC", "Helvetica Neue", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  header { padding: 72px 0 8px; text-align: center; }
+  .mark {
+    width: 84px; height: 84px; border-radius: 20px;
+    background: linear-gradient(160deg, #2b93ff, #0066e0);
+    display: inline-flex; align-items: center; justify-content: center;
+    margin-bottom: 22px;
+  }
+  .mark svg { width: 48px; height: 48px; }
+  h1 { font-size: 34px; line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.025em; }
+  .tag { color: var(--muted); font-size: 18px; margin: 0; }
+  h2 { font-size: 21px; margin: 48px 0 12px; letter-spacing: -0.01em; }
+  p { margin: 0 0 14px; }
+  .problem {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin: 40px 0 0;
+  }
+  .problem strong { color: var(--accent); }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 9px; }
+  li strong { font-weight: 600; }
+  a { color: var(--accent); }
+  .cta { text-align: center; margin: 44px 0 0; }
+  .cta a {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    text-decoration: none;
+    padding: 14px 30px; border-radius: 12px;
+    font-weight: 600; font-size: 17px;
+  }
+  .soon { color: var(--muted); font-size: 14px; margin-top: 12px; }
+  footer {
+    margin-top: 64px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px; text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M32 44V32a18 18 0 0136 0v12" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+      <rect x="22" y="44" width="56" height="40" rx="9" stroke="#fff" stroke-width="9"/>
+      <path d="M45 56l16 8-16 8z" fill="#fff"/>
+    </svg>
+  </div>
+  <h1>丢不起的那几个<br>留在本机</h1>
+  <p class="tag">照片和视频的原始文件，iCloud 清不掉的那一份</p>
+</header>
+
+<div class="problem">
+  <p style="margin:0">
+    <strong>iCloud 从不压缩你上传的东西</strong>——云端那份永远是完整原件。
+    「优化 iPhone 储存空间」做的是把<em>本机</em>那份清掉、只留一个小预览，
+    你看到的画质下降是这么来的。
+  </p>
+  <p style="margin:14px 0 0">
+    而 Apple 没有提供把单个项目标记为「留在本机」的开关，也没有任何 API 能做到——
+    清哪些完全由系统决定。<strong>Keepsake 的办法是在旁边另存一份原件</strong>，
+    存在系统清理机制够不到的地方。
+  </p>
+</div>
+
+<h2>它怎么做的</h2>
+<ul>
+  <li><strong>逐字节相同。</strong>复制的是相机写下的那份原始文件——同编码、同码率、
+      EXIF 原样保留，不做任何转码。</li>
+  <li><strong>可以验证。</strong>每一项存入时计算 SHA-256，随时可以重新校验，
+      确认它没有悄悄损坏。一个五年才打开一次的文件，静默损坏没有别的机会被发现。</li>
+  <li><strong>你随时能拿走。</strong>「文件」App →「我的 iPhone」→ Keepsake，
+      每一项是名字可读的普通文件夹，直接拖到电脑或硬盘。
+      没有这个 App 也一样能打开。</li>
+  <li><strong>不上传任何东西。</strong>没有服务器，没有账号。
+      文件从头到尾在你手机上。</li>
+</ul>
+
+<h2>一份副本不等于备份</h2>
+<p>
+  说清楚边界：Keepsake 防的是 iCloud 清理，不是手机丢了。
+  真正的备份是把文件夹搬到你自己的硬盘上——
+  开放「文件」访问就是为了这个。
+</p>
+
+<div class="cta">
+  <a href="/support">常见问题</a>
+  <p class="soon">即将上架 App Store</p>
+</div>
+
+<footer>
+  Keepsake · <a href="/support">支持</a> · <a href="/privacy">隐私政策</a>
+</footer>
+
+</div>
+</body>
+</html>
