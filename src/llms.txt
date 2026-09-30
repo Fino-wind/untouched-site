@@ -47,6 +47,9 @@ Photos couldn't finish downloading the full-quality original from iCloud (connec
 ### How do I keep specific videos on my iPhone with Optimize iPhone Storage on?
 Not inside the Photos app; the setting has no per-video exception. Keep a copy outside the library: Share › Export Unmodified Original to a folder in On My iPhone and play it from Files, or use Untouched to keep chosen videos on the device with every original file and a checksum. Guide: {{site_url}}/guides/keep-specific-videos-on-iphone/
 
+### What workarounds do people use?
+All of them keep a copy outside the Photos library: moving videos into the Files app, Dropbox offline files (a second cloud copy; whole offline folders need a paid Dropbox plan), or video player apps such as Infuse or Plex. The iOS 18 "Keep Downloaded" option applies to iCloud Drive files, not to Photos. Untouched does the same thing in one step from the photo picker, without removing anything from Photos. Compared: {{site_url}}/compare/
+
 ### Should I switch to Download and Keep Originals?
 Only if your whole library fits on your iPhone. If you turned on Optimize because the phone was full, it won't fit back; keep just the videos you need on the device instead. Guide: {{site_url}}/guides/optimize-storage-vs-download-and-keep-originals/
 
