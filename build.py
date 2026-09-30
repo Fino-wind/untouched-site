@@ -444,13 +444,6 @@ def main() -> int:
             warnings.append(f"{src}: description is {dlen} chars (aim for 50–170)")
         for m in re.finditer(r'<img\b(?![^>]*\balt=)[^>]*>', h):
             err(f"{src}: <img> without alt: {m.group(0)[:80]}")
-        # The home pages are the App Store "marketing URL". Naming iCloud to explain the situation is fine;
-        # framing it as the opponent is what got 1.0 rejected under guideline 5.2.5 ("Originals iCloud can't clear").
-        if p["type"] == "home":
-            main_html = strip_tags(h.split('<main id="main">', 1)[1].split("</main>", 1)[0])
-            bad = re.search(r"icloud\s+(can(?:no|'|’)?t|won(?:'|’)t|doesn(?:'|’)t|fails?|is (?:bad|broken))|(?:than|beats?|instead of|unlike|replaces?)\s+icloud|iCloud\s*(?:不能|做不到|不行|比不上)|比\s*iCloud|取代\s*iCloud", main_html, re.I)
-            if bad:
-                err(f"{src}: comparative use of iCloud on the home page: '{bad.group(0)}' — describe the setting, don't cast iCloud as the opponent")
         # internal links
         for href in re.findall(r'href="(/[^"#?]*)(?:#([^"]*))?"', h):
             path, anchor = href

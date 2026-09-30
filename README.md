@@ -29,7 +29,7 @@ Generated (don't edit by hand): `index.html`, `*/index.html`, `404.html`, `llms.
 ## What the build refuses
 
 - A hardcoded price in a page or in `llms.txt` (use the `{{price_*}}` placeholders)
-- The word **iCloud** in the main content of the home pages. They are the App Store "marketing URL", and comparative use of Apple trademarks there is what got 1.0 rejected under guideline 5.2.5. Guides may name Apple features factually; the footer carries the trademark notice.
+- (No iCloud restriction here: trademark caution applies to App Store metadata only, not to this site. Owner's call, 2026-09-30.)
 - Broken internal links or anchors, `<img>` without `alt`, duplicate titles, one-way `alt` language links, the old name "Keepsake"
 
 ## Rules for the words on this site
