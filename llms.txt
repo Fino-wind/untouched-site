@@ -1,0 +1,58 @@
+# Untouched
+
+> Untouched is an iPhone app that keeps byte-for-byte copies of the photos and videos you choose, in its own folder on your iPhone, so storage optimization can’t swap them for low-resolution previews.
+
+Untouched (an iPhone app for keeping original, full-resolution photos and videos on the device) exists because iOS has no per-photo "keep this one on my iPhone" switch. With Optimize iPhone Storage turned on, iCloud Photos keeps full-resolution originals in iCloud and space-saving versions on the iPhone. Untouched copies the original files of the items you choose into its own folder, which that optimization does not touch.
+
+- App Store: https://apps.apple.com/app/id6808529019 (listed as "Untouched: Photo Originals")
+- Website: https://untouched.tetherme.app/
+- Platform: iPhone, iOS 26 or later. App languages: English and Simplified Chinese.
+- Price: keep 1 item free with no time limit; to keep more, $3.99/month, $14.99/year, or $24.99 once (US prices; set per country by the App Store). Not available in mainland China.
+- Developer: independent. Not affiliated with Apple.
+
+## What it does
+
+- Copies the original files Photos holds for each chosen item, byte for byte, using the Photos framework's resource export. No export, no re-encoding: HEIC stays HEIC, HEVC stays HEVC; EXIF, capture date and location stay inside the file.
+- Keeps every file of an item chosen from Photos: a Live Photo's still and its paired video; an edited item's unedited original, edited version and edit data; both files of a RAW + JPEG pair.
+- Records a SHA-256 checksum for every file when it is added. "Verify integrity" (per item) and "Verify all files" (Settings) re-check them on demand.
+- Stores one human-readable folder per item in Files › On My iPhone › Untouched (for example "2026-06-14 IMG_2041-a3f9c1"). The folders can be copied to a Mac, a drive or via AirDrop and open without the app.
+- Downloads the full original from iCloud first if only a space-saving version is on the iPhone; shows bytes retrieved and speed. The app must stay in the foreground while copying.
+- Also imports any file from the Files app ("Import from Files"), kept exactly as it is.
+- Read-only access to the photo library: never edits, moves or deletes anything in Photos. Requires full photo library access, because the photo picker only identifies the chosen library item to apps with full access.
+- No account, no server, no photo uploads. Sends anonymous usage statistics (success/failure categories, sizes, device model, iOS version) to PostHog in the EU; never file names, album names, locations, timestamps or images. IP addresses are discarded.
+
+## Limits, stated plainly
+
+- It does not free up space; each kept item uses its full size.
+- It is not a backup: deleting the app deletes its folder, and by default the folder is excluded from iPhone backups (switchable in the app's Settings). Copy the folder to a computer or drive for a second copy.
+- Items from a Face ID-locked Hidden album are kept as the single file iOS hands over ("Picker copy"), which may not be the original. Turn the lock off while adding them to keep the complete original.
+- No automatic or background archiving of new photos.
+- If a subscription lapses, everything already kept stays accessible (open, verify, export, delete); only adding new items is paused.
+
+## Questions people ask
+
+### Why do old photos and videos look blurry on my iPhone?
+Usually because Optimize iPhone Storage is on. The full-resolution original lives in iCloud and the iPhone keeps a smaller version; you see the smaller one until the original downloads, and offline or on a weak connection it doesn't. Guide: https://untouched.tetherme.app/guides/why-iphone-photos-look-blurry/
+
+### Can I keep specific photos on my iPhone with Optimize Storage on?
+Not inside the Photos app: there is no per-photo, per-album or Favorites exemption. Options are turning on Download and Keep Originals for the whole library, exporting unmodified originals to Files or a drive by hand, or using Untouched to keep chosen originals on the iPhone. Guide: https://untouched.tetherme.app/guides/keep-specific-photos-on-iphone/
+
+### Optimize iPhone Storage or Download and Keep Originals?
+Optimize keeps originals in iCloud and smaller versions on the iPhone (the default when iCloud Photos is on). Download and Keep Originals keeps every original on the iPhone too, which needs room for the whole library. Guide: https://untouched.tetherme.app/guides/optimize-storage-vs-download-and-keep-originals/
+
+### How do I copy original photos off an iPhone without losing quality?
+Use a method that moves the file rather than re-encoding it: Export Unmodified Original to a drive, AirDrop to a Mac with All Photos Data turned on, or import over USB with Photos or Image Capture on a Mac. With Optimize iPhone Storage on, the original downloads from iCloud first. Guide: https://untouched.tetherme.app/guides/copy-original-photos-off-iphone/
+
+### What are the ways to keep full-resolution originals on an iPhone?
+Compared side by side: https://untouched.tetherme.app/compare/
+
+## Pages
+
+- [Home](https://untouched.tetherme.app/): what Untouched is, what it keeps, pricing, limits, FAQ
+- [Compare options](https://untouched.tetherme.app/compare/)
+- [Guides](https://untouched.tetherme.app/guides/)
+- [Support](https://untouched.tetherme.app/support/)
+- [Privacy policy](https://untouched.tetherme.app/privacy/)
+- [中文首页](https://untouched.tetherme.app/zh/)
+
+Last updated: 2026-09-30. Contact: yjia2175@gmail.com

@@ -1,0 +1,39 @@
+<!--meta {
+  "path": "/support/",
+  "alt": "/zh/support/",
+  "lang": "en",
+  "type": "page",
+  "title": "Support",
+  "h1": "Support",
+  "crumb": "Support",
+  "meta_line": "Answers to the questions people actually ask, and how to reach a person.",
+  "description": "Help with Untouched: photo access, the Hidden album, where your files are, verifying them, backups, purchases, and how to contact support."
+} -->
+<p>Write to <a href="mailto:{{support_email}}">{{support_email}}</a> any time. Replies usually come within a day or two. If a copy failed, attach the diagnostics log (see the end of this page); it saves a lot of back and forth.</p>
+
+<h2>Getting started</h2>
+<details class="faq-item"><summary>How do I keep a photo or video?</summary><div class="answer"><p>Tap + and choose <strong>Choose from Photos</strong>, then pick one or more items. Untouched copies each item’s original files. If an original is only in iCloud, it downloads first. Keep the app open until the progress row finishes.</p></div></details>
+<details class="faq-item"><summary>It says “Full access required”. Why?</summary><div class="answer"><p>The photo picker only tells an app which library item you chose when the app has full access, and that’s the only way to reach the original files. Go to <strong>Settings › Untouched › Photos › All Photos</strong>. Untouched only reads your library; it never edits or deletes anything in it.</p></div></details>
+<details class="faq-item"><summary>Why is there no percentage on the progress bar?</summary><div class="answer"><p>iOS doesn’t tell apps how big an original is before it arrives, so any percentage would be invented. Untouched shows the real amount retrieved so far and the download speed instead.</p></div></details>
+<details class="faq-item"><summary>Can it copy new photos automatically?</summary><div class="answer"><p>No. Downloading large originals from iCloud takes longer than iOS allows apps to run in the background, so copying happens while the app is open, for the items you choose.</p></div></details>
+
+<h2>The Hidden album</h2>
+<details class="faq-item"><summary>Can I keep items from the Hidden album?</summary><div class="answer"><p>Yes. If the Hidden album is locked with Face ID, iOS doesn’t hand apps the full item, so Untouched keeps the single file the system gives it. It’s marked <strong>Picker copy (single file)</strong> in the item’s details, and if the original had been offloaded to iCloud, that file may be the smaller version. For the complete original with all its files, turn off the lock in <strong>Settings › Apps › Photos</strong> while you add the item, then turn it back on. Turning off the lock doesn’t unhide anything.</p></div></details>
+
+<h2>Your files</h2>
+<details class="faq-item"><summary>Where are my files?</summary><div class="answer"><p>In <strong>Files › On My iPhone › Untouched</strong>. Each item is a folder named with its date and file name, containing the original files: for example <code>original-IMG_2041.HEIC</code>, and for a Live Photo also <code>live-IMG_2041.MOV</code>.</p></div></details>
+<details class="faq-item"><summary>How do I get them onto a computer or a drive?</summary><div class="answer"><p>On a Mac, connect your iPhone, select it in the Finder sidebar, open the <strong>Files</strong> tab and drag the Untouched folder out. Or, in the Files app, copy the folders to a connected drive. For a single item, open it in Untouched and tap <strong>Export original…</strong>. The files open without Untouched.</p></div></details>
+<details class="faq-item"><summary>How do I check that a file hasn’t changed?</summary><div class="answer"><p>Open an item and tap <strong>Verify integrity</strong>, or check everything at once in <strong>Settings › Integrity › Verify all files</strong>. Untouched recomputes each file’s SHA-256 checksum and compares it with the one recorded when the file went in.</p></div></details>
+<details class="faq-item"><summary>Are my files in my iCloud Backup?</summary><div class="answer"><p>Not by default. The originals usually already exist in iCloud Photos, so Untouched leaves its folder out of your device backups to avoid paying for the same files twice. To include them, turn off <strong>Exclude from iCloud Backup</strong> in Untouched’s Settings. Either way, if you switch phones, copy the Untouched folder to a computer or drive first.</p></div></details>
+<details class="faq-item"><summary>What happens if I delete the app?</summary><div class="answer"><p>iOS deletes the app’s folder along with it, including everything kept in Untouched. Copy your files somewhere else first.</p></div></details>
+<details class="faq-item"><summary>Does deleting an item in Untouched delete it from Photos?</summary><div class="answer"><p>No. Deleting in Untouched removes only its copy. Your photo library is never touched. Note that swiping to delete in the list doesn’t ask for confirmation.</p></div></details>
+
+<h2>Purchases</h2>
+<details class="faq-item"><summary>What’s free?</summary><div class="answer"><p>You can keep one item for free with no time limit. If you delete it, you can add a different one. To keep more, subscribe ({{price_monthly}} a month or {{price_yearly}} a year) or buy once for {{price_lifetime}}. US prices; the App Store shows yours.</p></div></details>
+<details class="faq-item"><summary>What happens to my files if I stop paying?</summary><div class="answer"><p>Nothing. You can still open, verify, export and delete everything. Paying only unlocks adding more.</p></div></details>
+<details class="faq-item"><summary>I bought it but another iPhone isn’t unlocked</summary><div class="answer"><p>Open the upgrade screen and tap <strong>Restore</strong>. Both iPhones need to be signed in with the same Apple Account.</p></div></details>
+<details class="faq-item"><summary>How do I cancel a subscription?</summary><div class="answer"><p>In <strong>Settings › [your name] › Subscriptions</strong>. Subscriptions renew automatically until you cancel at least 24 hours before the period ends.</p></div></details>
+
+<h2 id="diagnostics">Sending a diagnostics log</h2>
+<p>If a copy failed, tap the gear icon, then <strong>Diagnostics › Share log file</strong>, and attach it to your email. The log records each step of each copy. It’s stored only on your iPhone and includes file names, so it leaves your phone only if you share it.</p>
+<p>Email: <a href="mailto:{{support_email}}">{{support_email}}</a></p>

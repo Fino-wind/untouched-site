@@ -1,170 +1,97 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+<!doctype html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>支持 · Untouched</title>
-<style>
-  :root {
-    --bg: #ffffff;
-    --surface: #edf0f6;
-    --text: #1c1c1e;
-    --muted: #6b7280;
-    --accent: #007aff;
-    --line: #e3e7ef;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #000000;
-      --surface: #1c1c1e;
-      --text: #f2f2f7;
-      --muted: #98989f;
-      --accent: #0a84ff;
-      --line: #2c2c2e;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    padding: 0 20px 80px;
-    background: var(--bg);
-    color: var(--text);
-    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text",
-          "PingFang SC", "Helvetica Neue", sans-serif;
-    -webkit-text-size-adjust: 100%;
-  }
-  .wrap { max-width: 680px; margin: 0 auto; }
-  header { padding: 56px 0 28px; border-bottom: 1px solid var(--line); }
-  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.02em; }
-  .sub { color: var(--muted); font-size: 15px; margin: 0; }
-  h2 { font-size: 20px; margin: 44px 0 12px; letter-spacing: -0.01em; }
-  p { margin: 0 0 14px; }
-  ul, ol { margin: 0 0 14px; padding-left: 22px; }
-  li { margin-bottom: 7px; }
-  .lead {
-    background: var(--surface);
-    border-radius: 14px;
-    padding: 20px 22px;
-    margin: 28px 0 8px;
-  }
-  .lead strong { color: var(--accent); }
-  .q {
-    font-size: 17px; font-weight: 600;
-    margin: 30px 0 8px;
-  }
-  a { color: var(--accent); }
-  .cta {
-    display: inline-block;
-    background: var(--accent); color: #fff;
-    text-decoration: none;
-    padding: 12px 22px; border-radius: 11px;
-    font-weight: 600; margin-top: 6px;
-  }
-  footer {
-    margin-top: 56px; padding-top: 22px;
-    border-top: 1px solid var(--line);
-    color: var(--muted); font-size: 14px;
-  }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Untouched</title>
+<meta name="description" content="Help with Untouched: photo access, the Hidden album, where your files are, verifying them, backups, purchases, and how to contact support.">
+<link rel="canonical" href="https://untouched.tetherme.app/support/">
+<link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/support/">
+<link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/support/">
+<link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/support/">
+<meta name="apple-itunes-app" content="app-id=6808529019">
+<meta name="theme-color" content="#F3F5F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A111C" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Untouched">
+<meta property="og:title" content="Support">
+<meta property="og:description" content="Help with Untouched: photo access, the Hidden album, where your files are, verifying them, backups, purchases, and how to contact support.">
+<meta property="og:url" content="https://untouched.tetherme.app/support/">
+<meta property="og:image" content="https://untouched.tetherme.app/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Untouched","item":"https://untouched.tetherme.app/"},{"@type":"ListItem","position":2,"name":"Support","item":"https://untouched.tetherme.app/support/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I keep a photo or video?","acceptedAnswer":{"@type":"Answer","text":"Tap + and choose Choose from Photos , then pick one or more items. Untouched copies each item’s original files. If an original is only in iCloud, it downloads first. Keep the app open until the progress row finishes."}},{"@type":"Question","name":"It says “Full access required”. Why?","acceptedAnswer":{"@type":"Answer","text":"The photo picker only tells an app which library item you chose when the app has full access, and that’s the only way to reach the original files. Go to Settings › Untouched › Photos › All Photos . Untouched only reads your library; it never edits or deletes anything in it."}},{"@type":"Question","name":"Why is there no percentage on the progress bar?","acceptedAnswer":{"@type":"Answer","text":"iOS doesn’t tell apps how big an original is before it arrives, so any percentage would be invented. Untouched shows the real amount retrieved so far and the download speed instead."}},{"@type":"Question","name":"Can it copy new photos automatically?","acceptedAnswer":{"@type":"Answer","text":"No. Downloading large originals from iCloud takes longer than iOS allows apps to run in the background, so copying happens while the app is open, for the items you choose."}},{"@type":"Question","name":"Can I keep items from the Hidden album?","acceptedAnswer":{"@type":"Answer","text":"Yes. If the Hidden album is locked with Face ID, iOS doesn’t hand apps the full item, so Untouched keeps the single file the system gives it. It’s marked Picker copy (single file) in the item’s details, and if the original had been offloaded to iCloud, that file may be the smaller version. For the complete original with all its files, turn off the lock in Settings › Apps › Photos while you add the item, then turn it back on. Turning off the lock doesn’t unhide anything."}},{"@type":"Question","name":"Where are my files?","acceptedAnswer":{"@type":"Answer","text":"In Files › On My iPhone › Untouched . Each item is a folder named with its date and file name, containing the original files: for example original-IMG_2041.HEIC , and for a Live Photo also live-IMG_2041.MOV ."}},{"@type":"Question","name":"How do I get them onto a computer or a drive?","acceptedAnswer":{"@type":"Answer","text":"On a Mac, connect your iPhone, select it in the Finder sidebar, open the Files tab and drag the Untouched folder out. Or, in the Files app, copy the folders to a connected drive. For a single item, open it in Untouched and tap Export original… . The files open without Untouched."}},{"@type":"Question","name":"How do I check that a file hasn’t changed?","acceptedAnswer":{"@type":"Answer","text":"Open an item and tap Verify integrity , or check everything at once in Settings › Integrity › Verify all files . Untouched recomputes each file’s SHA-256 checksum and compares it with the one recorded when the file went in."}},{"@type":"Question","name":"Are my files in my iCloud Backup?","acceptedAnswer":{"@type":"Answer","text":"Not by default. The originals usually already exist in iCloud Photos, so Untouched leaves its folder out of your device backups to avoid paying for the same files twice. To include them, turn off Exclude from iCloud Backup in Untouched’s Settings. Either way, if you switch phones, copy the Untouched folder to a computer or drive first."}},{"@type":"Question","name":"What happens if I delete the app?","acceptedAnswer":{"@type":"Answer","text":"iOS deletes the app’s folder along with it, including everything kept in Untouched. Copy your files somewhere else first."}},{"@type":"Question","name":"Does deleting an item in Untouched delete it from Photos?","acceptedAnswer":{"@type":"Answer","text":"No. Deleting in Untouched removes only its copy. Your photo library is never touched. Note that swiping to delete in the list doesn’t ask for confirmation."}},{"@type":"Question","name":"What’s free?","acceptedAnswer":{"@type":"Answer","text":"You can keep one item for free with no time limit. If you delete it, you can add a different one. To keep more, subscribe ($3.99 a month or $14.99 a year) or buy once for $24.99. US prices; the App Store shows yours."}},{"@type":"Question","name":"What happens to my files if I stop paying?","acceptedAnswer":{"@type":"Answer","text":"Nothing. You can still open, verify, export and delete everything. Paying only unlocks adding more."}},{"@type":"Question","name":"I bought it but another iPhone isn’t unlocked","acceptedAnswer":{"@type":"Answer","text":"Open the upgrade screen and tap Restore . Both iPhones need to be signed in with the same Apple Account."}},{"@type":"Question","name":"How do I cancel a subscription?","acceptedAnswer":{"@type":"Answer","text":"In Settings › [your name] › Subscriptions . Subscriptions renew automatically until you cancel at least 24 hours before the period ends."}}]}]}</script>
 </head>
 <body>
-<div class="wrap">
-
-<header>
-  <h1>支持</h1>
-  <p class="sub">Untouched · 把丢不起的原件留在本机</p>
+<a class="visually-hidden" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/icon-128.png" width="30" height="30" alt="">Untouched</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#how" class="hide-sm">How it works</a>
+      <a href="/guides/">Guides</a>
+      <a href="/#faq" class="hide-sm">FAQ</a>
+      <a class="lang" href="/zh/support/" hreflang="zh-Hans" lang="zh-Hans">中文</a>
+      <a class="btn" href="https://apps.apple.com/app/id6808529019">Get the app</a>
+    </nav>
+  </div>
 </header>
-
-<div class="lead">
-  <strong>先说这个 App 到底在解决什么。</strong>
-  iCloud 从不压缩你上传的东西——云端那份永远是完整原件。
-  「优化 iPhone 储存空间」做的是把<em>本机</em>那份清掉、只留一个小预览，
-  你看到的画质下降是这么来的。而 Apple 没有提供把单个项目标记为「留在本机」的开关，
-  也没有任何 API 能做到。所以 Untouched 的办法是：把原始文件复制一份到自己的文件夹，
-  那里不受清理机制影响。
+<div class="lang-hint" data-lang-hint lang="zh-Hans">
+  <div class="wrap"><span>这个页面有中文版。</span><a href="/zh/support/" hreflang="zh-Hans">查看中文</a><button type="button" aria-label="关闭">关闭</button></div>
 </div>
+<main id="main">
+<div class="wrap">
+  <header class="article-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Untouched</a><span aria-hidden="true">/</span><span aria-current="page">Support</span></nav>
+    <h1>Support</h1>
+    <p class="article-meta">Answers to the questions people actually ask, and how to reach a person.</p>
+  </header>
+  <article class="prose">
+<p>Write to <a href="mailto:yjia2175@gmail.com">yjia2175@gmail.com</a> any time. Replies usually come within a day or two. If a copy failed, attach the diagnostics log (see the end of this page); it saves a lot of back and forth.</p>
 
-<h2>常见问题</h2>
+<h2>Getting started</h2>
+<details class="faq-item"><summary>How do I keep a photo or video?</summary><div class="answer"><p>Tap + and choose <strong>Choose from Photos</strong>, then pick one or more items. Untouched copies each item’s original files. If an original is only in iCloud, it downloads first. Keep the app open until the progress row finishes.</p></div></details>
+<details class="faq-item"><summary>It says “Full access required”. Why?</summary><div class="answer"><p>The photo picker only tells an app which library item you chose when the app has full access, and that’s the only way to reach the original files. Go to <strong>Settings › Untouched › Photos › All Photos</strong>. Untouched only reads your library; it never edits or deletes anything in it.</p></div></details>
+<details class="faq-item"><summary>Why is there no percentage on the progress bar?</summary><div class="answer"><p>iOS doesn’t tell apps how big an original is before it arrives, so any percentage would be invented. Untouched shows the real amount retrieved so far and the download speed instead.</p></div></details>
+<details class="faq-item"><summary>Can it copy new photos automatically?</summary><div class="answer"><p>No. Downloading large originals from iCloud takes longer than iOS allows apps to run in the background, so copying happens while the app is open, for the items you choose.</p></div></details>
 
-<p class="q">为什么需要「所有照片」权限？「选中的照片」不行吗？</p>
-<p>
-  不行，这是系统的限制而不是我们的选择。只有在完整访问权限下，
-  照片选择器才会回传资源标识符，而那是读到<strong>原始文件</strong>的唯一途径。
-  在受限权限下，App 拿到的是系统转码后的副本——那恰好是这个 App 要避免的东西。
-  权限只用于读取，Untouched 从不修改或删除你相册里的任何内容。
-</p>
+<h2>The Hidden album</h2>
+<details class="faq-item"><summary>Can I keep items from the Hidden album?</summary><div class="answer"><p>Yes. If the Hidden album is locked with Face ID, iOS doesn’t hand apps the full item, so Untouched keeps the single file the system gives it. It’s marked <strong>Picker copy (single file)</strong> in the item’s details, and if the original had been offloaded to iCloud, that file may be the smaller version. For the complete original with all its files, turn off the lock in <strong>Settings › Apps › Photos</strong> while you add the item, then turn it back on. Turning off the lock doesn’t unhide anything.</p></div></details>
 
-<p class="q">隐藏相册里的项目存不进来</p>
-<p>
-  当隐藏相册开着面容 ID 锁时，iOS 不会把文件交给任何 App。两条路：
-</p>
-<ol>
-  <li><strong>暂时关掉锁</strong>：设置 → 照片 → 关闭「使用面容 ID」。
-      注意<strong>关掉锁不等于取消隐藏</strong>，那些照片仍然不出现在主相册里，
-      变的只是打开那个相册要不要再验一次身份。存完随时可以开回来。</li>
-  <li><strong>走「文件」</strong>：在照片 App 里选择 → 分享 → 存储到「文件」，
-      存在「我的 iPhone」下任意位置，再回到 Untouched 用「+ → 从『文件』导入」。</li>
-</ol>
+<h2>Your files</h2>
+<details class="faq-item"><summary>Where are my files?</summary><div class="answer"><p>In <strong>Files › On My iPhone › Untouched</strong>. Each item is a folder named with its date and file name, containing the original files: for example <code>original-IMG_2041.HEIC</code>, and for a Live Photo also <code>live-IMG_2041.MOV</code>.</p></div></details>
+<details class="faq-item"><summary>How do I get them onto a computer or a drive?</summary><div class="answer"><p>On a Mac, connect your iPhone, select it in the Finder sidebar, open the <strong>Files</strong> tab and drag the Untouched folder out. Or, in the Files app, copy the folders to a connected drive. For a single item, open it in Untouched and tap <strong>Export original…</strong>. The files open without Untouched.</p></div></details>
+<details class="faq-item"><summary>How do I check that a file hasn’t changed?</summary><div class="answer"><p>Open an item and tap <strong>Verify integrity</strong>, or check everything at once in <strong>Settings › Integrity › Verify all files</strong>. Untouched recomputes each file’s SHA-256 checksum and compares it with the one recorded when the file went in.</p></div></details>
+<details class="faq-item"><summary>Are my files in my iCloud Backup?</summary><div class="answer"><p>Not by default. The originals usually already exist in iCloud Photos, so Untouched leaves its folder out of your device backups to avoid paying for the same files twice. To include them, turn off <strong>Exclude from iCloud Backup</strong> in Untouched’s Settings. Either way, if you switch phones, copy the Untouched folder to a computer or drive first.</p></div></details>
+<details class="faq-item"><summary>What happens if I delete the app?</summary><div class="answer"><p>iOS deletes the app’s folder along with it, including everything kept in Untouched. Copy your files somewhere else first.</p></div></details>
+<details class="faq-item"><summary>Does deleting an item in Untouched delete it from Photos?</summary><div class="answer"><p>No. Deleting in Untouched removes only its copy. Your photo library is never touched. Note that swiping to delete in the list doesn’t ask for confirmation.</p></div></details>
 
-<p class="q">存进去的文件怎么拿出来？</p>
-<p>
-  打开「文件」App →「我的 iPhone」→ Untouched。每一项是一个名字可读的普通文件夹，
-  里面是原始文件，可以直接拖到电脑、移动硬盘，或者 AirDrop 出去。
-  <strong>不需要经过 Untouched，也不需要这个 App 还装着。</strong>
-</p>
+<h2>Purchases</h2>
+<details class="faq-item"><summary>What’s free?</summary><div class="answer"><p>You can keep one item for free with no time limit. If you delete it, you can add a different one. To keep more, subscribe ($3.99 a month or $14.99 a year) or buy once for $24.99. US prices; the App Store shows yours.</p></div></details>
+<details class="faq-item"><summary>What happens to my files if I stop paying?</summary><div class="answer"><p>Nothing. You can still open, verify, export and delete everything. Paying only unlocks adding more.</p></div></details>
+<details class="faq-item"><summary>I bought it but another iPhone isn’t unlocked</summary><div class="answer"><p>Open the upgrade screen and tap <strong>Restore</strong>. Both iPhones need to be signed in with the same Apple Account.</p></div></details>
+<details class="faq-item"><summary>How do I cancel a subscription?</summary><div class="answer"><p>In <strong>Settings › [your name] › Subscriptions</strong>. Subscriptions renew automatically until you cancel at least 24 hours before the period ends.</p></div></details>
 
-<p class="q">如果我不续费了，已经存的文件会怎样？</p>
-<p>
-  <strong>一个都不会少。</strong>付费只解锁「继续存新的」，从不影响已经存进来的东西——
-  不锁定、不隐藏、不降低画质。技术上我们也做不到：那些文件在你手机的普通文件夹里，
-  你随时能拿走。这一点是刻意设计的。
-</p>
+<h2 id="diagnostics">Sending a diagnostics log</h2>
+<p>If a copy failed, tap the gear icon, then <strong>Diagnostics › Share log file</strong>, and attach it to your email. The log records each step of each copy. It’s stored only on your iPhone and includes file names, so it leaves your phone only if you share it.</p>
+<p>Email: <a href="mailto:yjia2175@gmail.com">yjia2175@gmail.com</a></p>
 
-<p class="q">删掉 App 会怎样？</p>
-<p>
-  会连同 Untouched 的文件夹一起删除。<strong>如果打算卸载，请先把文件拷走。</strong>
-</p>
-
-<p class="q">文件会被压缩或转码吗？</p>
-<p>
-  不会。复制的是逐字节相同的原始文件——同编码、同码率、EXIF 原样保留。
-  每一项在存入时都会计算 SHA-256 校验值，你随时可以在 App 里重新校验，
-  确认文件没有悄悄损坏。
-</p>
-
-<p class="q">为什么进度条没有百分比？</p>
-<p>
-  因为没有可信的分母：系统不提供资源的字节数，
-  连它自己的进度值都标注为「近似」。编出来的百分比只会卡在 99% 或者跑完了还在转。
-  所以 Untouched 显示的是<strong>实际测量到的</strong>已取回字节数和速率——
-  分子和速度都是真的，只是不假装知道总数。
-</p>
-
-<p class="q">能自动归档新拍的照片吗？</p>
-<p>
-  暂时不能。几个 GB 的文件从 iCloud 取回所需的时间，超出了 iOS 给后台任务的配额，
-  所以归档需要 App 在前台。
-</p>
-
-<p class="q">购买之后在另一台设备上没有解锁</p>
-<p>
-  打开付费页面，点右上角「恢复购买」。请确认两台设备登录的是同一个 Apple 账户。
-</p>
-
-<h2>还是没解决？</h2>
-<p>
-  直接写信，一般一两天内回复。如果是某次归档失败，
-  麻烦在 App 里打开<strong>设置 → 诊断信息 → 分享日志文件</strong>并附上——
-  那份日志记录了每一步发生了什么，能省掉很多来回。
-</p>
-<p>
-  <a class="cta" href="mailto:yjia2175@gmail.com?subject=Untouched%20支持">写信给我们</a>
-</p>
-
-<footer>
-  Untouched · <a href="/support">支持</a> · <a href="/privacy">隐私政策</a>
+  </article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="/support/">Support</a><a href="/privacy/">Privacy</a><a href="/guides/">Guides</a><a href="/compare/">Compare options</a><a href="/zh/support/">中文</a></nav>
+    <p>© 2026 Untouched · <a href="mailto:yjia2175@gmail.com">yjia2175@gmail.com</a></p>
+    <p>Apple, iPhone and iCloud are trademarks of Apple Inc., registered in the U.S. and other countries. Untouched is an independent app and is not affiliated with or endorsed by Apple.</p>
+  </div>
 </footer>
-
-</div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
