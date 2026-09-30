@@ -1,0 +1,73 @@
+<!--meta {
+  "path": "/guides/keep-specific-videos-on-iphone/",
+  "alt": "/zh/guides/keep-specific-videos-on-iphone/",
+  "lang": "en",
+  "type": "article",
+  "nav": "guides",
+  "title": "How to keep specific videos on your iPhone with Optimize Storage on",
+  "h1": "How to keep specific videos on your iPhone with Optimize iPhone Storage on",
+  "crumb": "Keep specific videos on iPhone",
+  "crumbs": [["Guides", "/guides/"]],
+  "description": "Optimize iPhone Storage has no per-video exception. How to keep chosen videos (and photos) on your iPhone, ready to play offline, without giving back the space you freed.",
+  "about": ["Optimize iPhone Storage", "iCloud Photos", "keep videos on iPhone", "offline video"]
+} -->
+<section class="short-answer">
+  <h2>Short answer</h2>
+  <p>You can’t do it inside the Photos app. Optimize iPhone Storage applies to your whole library; iOS has no setting that exempts one video, one album or your Favorites. What works is keeping a copy of the videos you care about <strong>outside the Photos library</strong>, where optimization doesn’t reach: export them to the Files app yourself, or use an app such as Untouched (an iPhone app that keeps the original files of the videos and photos you choose on your iPhone). The rest of your library stays optimized, so you keep the space you freed.</p>
+</section>
+
+<h2>Why there’s no per-video switch</h2>
+<p>Optimize iPhone Storage is one setting for the whole library. With it on, your iPhone decides which originals to replace with smaller versions based on how much space it needs, and Apple offers no way to pin particular items. Anything inside the Photos library is subject to that decision, so the only way to guarantee a video stays playable offline is a copy that isn’t part of the library.</p>
+
+<h2>Option 1: Turn off optimization for everything</h2>
+<p>Choose <span class="ui">Download and Keep Originals</span> in <span class="ui">Settings › [your name] › iCloud › Photos</span> (in iOS 27, then <span class="ui">iPhone Storage</span>). Every video plays instantly again.</p>
+<p><strong>Trade-off:</strong> your iPhone needs room for your entire library. If you turned on Optimize because a 150 GB library had filled a 256 GB phone, it won’t fit back.</p>
+
+<h2>Option 2: Export the videos to the Files app yourself</h2>
+<ol>
+  <li>In Photos, select the videos you want to keep on the phone.</li>
+  <li>Tap Share, then <span class="ui">Export Unmodified Original</span>.</li>
+  <li>Choose a folder under <span class="ui">On My iPhone</span> and tap Save.</li>
+  <li>From then on, play them from the Files app.</li>
+</ol>
+<p>If a video’s original is only in iCloud, it downloads first. For edited items, Apple notes that the unmodified original is exported.</p>
+<p><strong>Trade-offs:</strong> free and built in, but manual. You organize the folder yourself, nothing lets you check later that a file is intact, and videos in a locked Hidden album won’t export until you turn the lock off.</p>
+
+<h2>Option 3: Use an app that keeps them for you</h2>
+<p>Untouched does option 2’s job with the gaps filled in. You pick videos in the usual photo picker. For each one it downloads the original once, then keeps every file Photos holds for the item (a Live Photo’s video, an edited clip’s unedited original) in one readable folder in <span class="ui">Files › On My iPhone › Untouched</span>. You play them in Untouched or Files, instantly and offline. It records a SHA-256 checksum for every file so you can verify it later, shows whether each item’s original is still on the device in Photos, and never modifies your library.</p>
+<p><strong>Trade-offs:</strong> it uses space for what you keep; one item is free and keeping more is paid; and it isn’t a backup. Deleting the app deletes its folder.</p>
+
+{{app_card}}
+
+<h2>Which to choose</h2>
+<div class="table-scroll">
+  <table>
+    <thead><tr><th></th><th>Download and Keep Originals</th><th>Export to Files</th><th>Untouched</th></tr></thead>
+    <tbody>
+      <tr><th>Which videos play instantly</th><td>All of them</td><td>The ones you exported</td><td>The ones you picked</td></tr>
+      <tr><th>Space needed</th><td>Your whole library</td><td>Just those videos</td><td>Just those videos</td></tr>
+      <tr><th>Rest of the library</th><td>Not optimized</td><td>Stays optimized</td><td>Stays optimized</td></tr>
+      <tr><th>Where you play them</th><td>Photos</td><td>Files</td><td>Untouched or Files</td></tr>
+      <tr><th>Check the copy is intact</th><td>Not needed</td><td>No</td><td>SHA-256, on demand</td></tr>
+      <tr><th>Cost</th><td>Free</td><td>Free</td><td>One item free, then paid</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>If your library fits on your phone, option 1 is simplest. If it doesn’t, and there are a handful of videos you want to be able to play any time, keep those outside the library with option 2 or 3. Either way, copy the ones that matter to a computer or drive now and then: a copy on one device isn’t a backup.</p>
+
+<div class="sources">
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios">Back up and sync your photos and videos with iCloud</a>, iPhone User Guide (iOS 27)</li>
+    <li><a href="https://support.apple.com/guide/iphone/import-and-export-photos-and-videos-iph480caa1f3/ios">Import and export photos and videos on iPhone</a>, iPhone User Guide</li>
+    <li><a href="https://support.apple.com/en-us/105061">Manage your photo and video storage</a>, Apple Support</li>
+  </ul>
+</div>
+
+<div class="related">
+  <h2>Related</h2>
+  <ul>
+    <li><a href="/guides/iphone-videos-wont-play-icloud/">iPhone videos won’t play or take forever to load from iCloud?</a></li>
+    <li><a href="/compare/">Ways to keep full-quality videos on an iPhone, compared</a></li>
+  </ul>
+</div>

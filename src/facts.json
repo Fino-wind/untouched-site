@@ -18,7 +18,7 @@
   "updated": "2026-09-30",
   "updated_en": "September 30, 2026",
   "updated_zh": "2026 年 9 月 30 日",
-  "definition_en": "Untouched is an iPhone app that keeps byte-for-byte copies of the photos and videos you choose, in its own folder on your iPhone, so storage optimization can’t swap them for low-resolution previews.",
-  "definition_zh": "Untouched 是一款 iPhone App：把你选中的照片和视频的原始文件逐字节复制到它自己的文件夹里，让系统的储存空间优化没法把它们换成低清预览。",
+  "definition_en": "Untouched is an iPhone app that keeps the original files of the videos and photos you choose on your iPhone, so they play instantly and at full quality even when Optimize iPhone Storage keeps the rest of your library in iCloud.",
+  "definition_zh": "Untouched 是一款 iPhone App：把你挑中的视频和照片原件留在 iPhone 本机，即使「优化 iPhone 储存空间」把图库其余部分放在 iCloud，这几项也能随点随播、保持原画质。",
   "indexnow_key": "6d8a724e73abb2c05a79be9816e33f58"
 }

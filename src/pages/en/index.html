@@ -3,16 +3,16 @@
   "alt": "/zh/",
   "lang": "en",
   "type": "home",
-  "title": "Untouched — Keep the original photos and videos your iPhone can’t clear",
+  "title": "Untouched — Keep specific videos on your iPhone with Optimize Storage on",
   "title_exact": true,
-  "og_title": "Keep the originals your iPhone can’t clear",
-  "description": "Untouched keeps byte-for-byte originals of the photos and videos you choose, in a folder on your iPhone that storage optimization can’t reach. Verifiable, never uploaded."
+  "og_title": "Keep the videos you love ready to play",
+  "description": "Freed up space with Optimize iPhone Storage, but videos won’t play until they load from iCloud? Untouched keeps the videos you pick on your iPhone, ready to play offline."
 } -->
 <section class="hero">
   <div class="wrap">
     <div>
-      <h1>Keep the originals your iPhone can’t clear.</h1>
-      <p class="lede">To save space, your iPhone can swap full-resolution photos and videos for smaller copies. Untouched keeps byte-for-byte originals of the ones you choose, in its own folder, where that cleanup never reaches.</p>
+      <h1>Keep the videos you love ready to play.</h1>
+      <p class="lede">Optimize iPhone Storage can free up 100 GB by keeping your library in iCloud. The catch: older videos have to download before they play, and a long one can take minutes, or not load at all. Untouched keeps the originals of the few you choose on your iPhone, so they play instantly, even offline.</p>
       <div class="cta">
         {{badge}}
         <p class="price-note">Keep one item free. More from {{price_monthly}}/month. For iPhone, iOS {{min_ios}} or later.</p>
@@ -20,18 +20,20 @@
     </div>
     <figure class="reveal-wrap">
       <div class="reveal" data-reveal>
-        <img class="orig" src="/assets/hero.webp" width="1248" height="832" alt="A child’s cupped hands holding a dandelion at sunset: sharp on the left as the original, soft on the right as a space-saving copy." fetchpriority="high">
+        <img class="orig" src="/assets/hero.webp" width="1248" height="832" alt="The same video twice: on the left, kept in Untouched and ready to play at full quality; on the right, the optimized version, soft and still loading." fetchpriority="high">
         <img class="copy" src="/assets/hero-preview.jpg" width="1248" height="832" alt="" aria-hidden="true">
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12-7.5a1 1 0 0 0 0-1.72l-12-7.5A1 1 0 0 0 7 4.5Z"/></svg></span>
+        <span class="wait" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="currentColor" stroke-opacity=".3" stroke-width="3.5"/><path d="M18 4a14 14 0 0 1 14 14" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span>
         <div class="edge" aria-hidden="true"><span class="knob"><svg viewBox="0 0 20 20" fill="none"><path d="M7 5 2 10l5 5M13 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
-        <span class="tag tag-orig" aria-hidden="true">Original</span>
-        <span class="tag tag-copy" aria-hidden="true">Space-saving copy</span>
-        <input type="range" min="0" max="100" value="50" aria-label="Drag to compare the original with the space-saving copy">
+        <span class="tag tag-orig" aria-hidden="true">Kept in Untouched<span class="more"> · plays now</span></span>
+        <span class="tag tag-copy" aria-hidden="true">Optimized<span class="more"> · loading from iCloud</span></span>
+        <input type="range" min="0" max="100" value="50" aria-label="Drag to compare the kept video with the optimized one">
       </div>
       <div class="file-strip" aria-hidden="true">
-        <div class="row"><span class="name">2026-06-14 IMG_2041-a3f9c1/</span><span>original-IMG_2041.HEIC · 3.2 MB</span></div>
+        <div class="row"><span class="name">2026-06-14 IMG_4712-a3f9c1/</span><span>original-IMG_4712.MOV · 4K · 2:48 · 1.9 GB</span></div>
         <div class="row"><span>SHA-256 9f2c81e04b7d…6be4e41a</span><span class="ok">✓ Verified · 1/1 files intact</span></div>
       </div>
-      <figcaption>Drag to compare. An illustration of the same photo as an original and as a reduced copy.</figcaption>
+      <figcaption>Drag to compare. Illustration: the same video kept in Untouched (left) and optimized in your library (right).</figcaption>
     </figure>
   </div>
 </section>
@@ -39,52 +41,62 @@
 <section class="section" id="why">
   <div class="wrap">
     <div class="section-head">
-      <h2>Why an old photo can look soft on your own phone</h2>
-      <p>With Optimize iPhone Storage turned on, your iPhone keeps full-resolution originals in the cloud and space-saving versions on the device. You see the smaller one first. On a slow connection, or none at all, that’s all you get.</p>
+      <h2>More space. Then the videos won’t play.</h2>
+      <p>If this sounds familiar, Untouched was made for you.</p>
     </div>
     <ol class="steps">
       <li>
-        <div class="thumb"><img src="/assets/hero.webp" width="1248" height="832" alt="The dandelion photo at full resolution." loading="lazy"><span class="badge">Original on iPhone</span></div>
-        <h3>You take the photo</h3>
-        <p>The full-resolution file is on your iPhone and in your photo library in the cloud.</p>
+        <div class="thumb storage" aria-label="iPhone storage: 245 GB of 256 GB used, 150 GB of it photos and videos">
+          <div class="big">150 GB<small>of photos</small></div>
+          <div class="st-head"><strong>iPhone</strong><span>245 GB of 256 GB used</span></div>
+          <div class="bar"><span class="seg photos" style="width:58%"></span><span class="seg apps" style="width:24%"></span><span class="seg sys" style="width:13%"></span></div>
+          <ul class="legend"><li><i class="photos"></i>Photos 150 GB</li><li><i class="apps"></i>Apps</li><li><i class="sys"></i>System</li></ul>
+        </div>
+        <h3>Your iPhone is full</h3>
+        <p>256 GB, and photos and videos take 150 GB of it. You’ve never used iCloud.</p>
       </li>
       <li>
-        <div class="thumb"><img src="/assets/hero-preview.jpg" width="1248" height="832" alt="The same photo as a soft, reduced copy." loading="lazy"><span class="badge">Smaller copy on iPhone</span></div>
-        <h3>Space runs low</h3>
-        <p>Older photos and videos on the device are swapped for smaller copies. The originals stay in the cloud.</p>
+        <div class="thumb storage" aria-label="iPhone storage after optimizing: 100 GB of 256 GB used, photos down to 5 GB, 145 GB freed">
+          <div class="big">145 GB<small>freed</small></div>
+          <div class="st-head"><strong>iPhone</strong><span>100 GB of 256 GB used</span></div>
+          <div class="bar"><span class="seg photos" style="width:2%"></span><span class="seg apps" style="width:24%"></span><span class="seg sys" style="width:13%"></span></div>
+          <ul class="legend"><li><i class="photos"></i>Photos 5 GB</li><li><i class="apps"></i>Apps</li><li><i class="sys"></i>System</li></ul>
+        </div>
+        <h3>iCloud frees up the space</h3>
+        <p>You turn on iCloud Photos with Optimize iPhone Storage. The originals move to iCloud and your library on the iPhone shrinks to a few gigabytes.</p>
       </li>
       <li>
-        <div class="thumb"><img src="/assets/hero-preview.jpg" width="1248" height="832" alt="The reduced copy while the original downloads." loading="lazy"><span class="badge">Original downloading…</span><svg class="ring" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="14" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="3"/><circle cx="17" cy="17" r="14" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="88" stroke-dashoffset="60" stroke-linecap="round" transform="rotate(-90 17 17)"/></svg></div>
-        <h3>You open it later</h3>
-        <p>The original has to download before you see it sharp. Offline, on a plane, or on weak signal, it doesn’t.</p>
+        <div class="thumb"><img src="/assets/hero-preview.jpg" width="1248" height="832" alt="A soft video frame with a loading spinner." loading="lazy"><span class="badge">Loading video…</span><span class="center-wait" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="currentColor" stroke-opacity=".3" stroke-width="3.5"/><path d="M18 4a14 14 0 0 1 14 14" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></span></div>
+        <h3>Then the videos won’t play</h3>
+        <p>Photos come back in a second when you tap them. Long videos have to download first: minutes on a slow connection, nothing offline, sometimes “Unable to Load Video”.</p>
       </li>
     </ol>
-    <p class="callout-line">There’s no switch to keep one particular photo on your iPhone. You can keep your whole library, or let the system decide. Untouched adds the missing option: the few you pick.</p>
+    <p class="callout-line">Optimize iPhone Storage covers your whole library. There’s no setting that says “keep this one video on my iPhone.” That one thing is what Untouched does, and you keep the 145 GB.</p>
   </div>
 </section>
 
 <section class="section" id="keeps">
   <div class="wrap keeps">
     <div class="section-head">
-      <h2>What you keep is the file the camera wrote</h2>
-      <p>Untouched doesn’t export or convert anything. It asks Photos for the item’s actual files, copies them as they are, and fingerprints each one so you can check it later.</p>
+      <h2>The video stays on your iPhone, exactly as you shot it</h2>
+      <p>Untouched copies the original file Photos keeps for the item into its own folder. That copy isn’t part of your optimized library, so it never gets swapped for a smaller version and never has to wait for a download.</p>
     </div>
     <div>
       <div class="info">
         <div class="info-head">
-          <svg class="file-icon" viewBox="0 0 34 40" aria-hidden="true"><path d="M4 1h18l11 11v24a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/><path d="M22 1v8a3 3 0 0 0 3 3h8" fill="none" stroke="var(--accent)" stroke-width="1.5"/><path d="M8 31l6-8 4 5 3-3 5 6z" fill="var(--accent)"/></svg>
-          <div><div class="fname">IMG_2041.HEIC</div><div class="fmeta">Kept in Untouched</div></div>
+          <svg class="file-icon" viewBox="0 0 34 40" aria-hidden="true"><path d="M4 1h18l11 11v24a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/><path d="M22 1v8a3 3 0 0 0 3 3h8" fill="none" stroke="var(--accent)" stroke-width="1.5"/><path d="M13 22v10l8-5z" fill="var(--accent)"/></svg>
+          <div><div class="fname">IMG_4712.MOV</div><div class="fmeta">4K · 2:48 · kept in Untouched</div></div>
         </div>
         <dl>
-          <div class="row"><dt>Copy</dt><dd><strong>Byte for byte</strong><span class="sub">Not an export, not a re-encode. HEIC stays HEIC, HEVC video stays HEVC.</span></dd></div>
+          <div class="row"><dt>Playback</dt><dd><strong>Instant, even offline</strong><span class="sub">It’s a file on your iPhone, not a download waiting to happen. Play it in Untouched or the Files app.</span></dd></div>
+          <div class="row"><dt>Quality</dt><dd><strong>Byte for byte</strong><span class="sub">The original the camera wrote: not an export, not a re-encode. 4K HEVC stays 4K HEVC.</span></dd></div>
           <div class="row"><dt>Metadata</dt><dd><strong>Still inside the file</strong><span class="sub">Capture date, camera details and location travel with the original.</span></dd></div>
           <div class="row"><dt>Live Photos</dt><dd><strong>The photo and its video</strong><span class="sub">Both halves are kept together.</span></dd></div>
           <div class="row"><dt>Edited items</dt><dd><strong>Before and after</strong><span class="sub">The unedited original, the edited version and the edit data.</span></dd></div>
-          <div class="row"><dt>RAW</dt><dd><strong>Kept alongside</strong><span class="sub">A RAW + JPEG pair keeps both files.</span></dd></div>
           <div class="row"><dt>Checksum</dt><dd><strong>SHA-256 for every file</strong><span class="sub">Recorded when it goes in. Tap Verify integrity any time to confirm nothing changed.</span></dd></div>
           <div class="row"><dt>Where</dt><dd><strong><span class="mono">Files › On My iPhone › Untouched</span></strong><span class="sub">One readable folder per item. Copy it to a Mac or a drive; it opens without the app.</span></dd></div>
-          <div class="row"><dt>Photo library</dt><dd><strong>Read only</strong><span class="sub">Untouched never edits, moves or deletes anything in Photos.</span></dd></div>
-          <div class="row"><dt>Uploads</dt><dd><strong>None</strong><span class="sub">No account, no server. Your photos never leave your iPhone.</span></dd></div>
+          <div class="row"><dt>Your library</dt><dd><strong>Left alone</strong><span class="sub">Untouched only reads. It never edits, moves or deletes anything in Photos, and your library stays optimized.</span></dd></div>
+          <div class="row"><dt>Uploads</dt><dd><strong>None</strong><span class="sub">No account, no server. Your videos never leave your iPhone.</span></dd></div>
         </dl>
       </div>
       <p class="small muted" style="margin-top:14px">This is what you get when you choose from Photos. Files you bring in from the Files app are kept exactly as they are, one file each.</p>
@@ -97,12 +109,12 @@
     <div>
       <div class="section-head"><h2>How it works</h2></div>
       <ol>
-        <li><h3>Pick the few that matter</h3><p>Tap +, then Choose from Photos. Or use Import from Files for anything already saved there.</p></li>
-        <li><h3>Untouched copies the original</h3><p>If the original is only in the cloud, it downloads first. You see the real amount retrieved and the speed, not a made-up percentage. Keep the app open until it’s done.</p></li>
-        <li><h3>Take it anywhere</h3><p>Open Files › On My iPhone › Untouched. Copy the folders to a Mac or a drive, or AirDrop them. They’re ordinary files.</p></li>
+        <li><h3>Pick the videos you rewatch</h3><p>Tap +, then Choose from Photos. The first steps, the wedding, the concert, the last video of someone you miss. Photos work too.</p></li>
+        <li><h3>Untouched brings the original home, once</h3><p>If the video is only in iCloud, Untouched downloads the full original one time and keeps it. You see the real amount retrieved and the speed. Keep the app open until it’s done.</p></li>
+        <li><h3>Play it any time</h3><p>Open it in Untouched, or in Files › On My iPhone › Untouched. No waiting and no connection needed.</p></li>
       </ol>
     </div>
-    <div class="device"><img src="/assets/app-list.webp" width="1084" height="1752" alt="The Untouched app listing four protected items: two HEIC photos and two videos, 5.2 MB in total." loading="lazy"></div>
+    <div class="device"><img src="/assets/app-list.webp" width="1084" height="1752" alt="The Untouched app listing four kept items: two HEIC photos and two videos." loading="lazy"></div>
   </div>
 </section>
 
@@ -110,7 +122,7 @@
   <div class="wrap pricing">
     <div class="section-head">
       <h2>Keep one free. Pay only to keep more.</h2>
-      <p>Try everything with one item, for as long as you like. To keep more, subscribe or buy once.</p>
+      <p>Try it with one video, for as long as you like. To keep more, subscribe or buy once.</p>
     </div>
     <div>
       <div class="plans">
@@ -132,14 +144,14 @@
   <div class="wrap">
     <div class="boundary">
       <div>
-        <h2>A copy isn’t a backup</h2>
-        <p class="muted" style="margin-top:16px">Untouched protects the originals you pick from storage cleanup. It doesn’t protect you from losing the phone. Here’s exactly where the edges are.</p>
+        <h2>What to know before you start</h2>
+        <p class="muted" style="margin-top:16px">Untouched does one job. Here’s exactly where its edges are.</p>
       </div>
       <ul>
+        <li><strong>Play the kept copy from Untouched.</strong> The Photos app keeps showing its optimized version, as before. The copy that plays instantly lives in Untouched and in Files.</li>
+        <li><strong>It uses space for what you keep.</strong> A long 4K video can be several gigabytes. Keep the ones you rewatch; the rest of your library stays slim.</li>
         <li><strong>Deleting the app deletes its folder.</strong> iOS removes an app’s files when you delete it. Copy them out first.</li>
-        <li><strong>Left out of iPhone backups by default.</strong> These originals usually already exist in your photo library, so Untouched doesn’t add them to your backup twice. You can include them in the app’s Settings.</li>
-        <li><strong>It uses space.</strong> Every item is kept at full size. Pick the ones you can’t lose, not everything.</li>
-        <li><strong>Keep a second copy.</strong> Every so often, copy the Untouched folder to a computer or a drive. That’s why it’s an ordinary folder.</li>
+        <li><strong>A copy isn’t a backup.</strong> It’s left out of your iPhone backup by default because the original is already in your library. For a second copy, drag the Untouched folder to a computer or drive now and then.</li>
       </ul>
     </div>
   </div>
@@ -149,15 +161,18 @@
   <div class="wrap">
     <div class="section-head"><h2>Questions</h2></div>
     <div class="faq">
-      <details class="faq-item"><summary>Does Untouched compress or convert my photos?</summary><div class="answer"><p>No. It copies the original files Photos keeps for each item, byte for byte, and records a SHA-256 checksum for every file so you can verify them later.</p></div></details>
-      <details class="faq-item"><summary>Will it free up space on my iPhone?</summary><div class="answer"><p>No, it uses space. Each item is stored at full size. It’s for the few photos and videos you can’t afford to have reduced, not for your whole library.</p></div></details>
-      <details class="faq-item"><summary>How is this different from “Download and Keep Originals”?</summary><div class="answer"><p>That setting keeps every original in your library on your iPhone, which needs room for all of it. Untouched keeps only the items you choose, so the rest of your library can stay optimized. <a href="/guides/optimize-storage-vs-download-and-keep-originals/">Compare the two settings</a>.</p></div></details>
-      <details class="faq-item"><summary>Does it upload my photos anywhere?</summary><div class="answer"><p>No. There’s no account and no server; your files stay on your iPhone. The app sends anonymous usage statistics, such as whether a copy succeeded and how large it was, and never file names, locations or images. <a href="/privacy/">Read the privacy policy</a>.</p></div></details>
+      <details class="faq-item"><summary>Why do my videos take so long to play, or say “Unable to Load Video”?</summary><div class="answer"><p>With Optimize iPhone Storage on, the full video is in iCloud and your iPhone keeps a smaller version. When you play it, Photos downloads the original first. A long video can take minutes on a slow connection, won’t play offline, and sometimes fails with “Unable to Load Video”. <a href="/guides/iphone-videos-wont-play-icloud/">Why this happens and what fixes it</a>.</p></div></details>
+      <details class="faq-item"><summary>Can I keep one video on my iPhone without turning off Optimize Storage?</summary><div class="answer"><p>Not inside the Photos app: the setting applies to your whole library. That’s exactly what Untouched is for. Pick the video, and Untouched keeps its original file on your iPhone while the rest of your library stays optimized.</p></div></details>
+      <details class="faq-item"><summary>Will the video then play instantly in the Photos app?</summary><div class="answer"><p>No. Photos keeps showing its optimized version, just as before. Play the kept copy in Untouched or in Files › On My iPhone › Untouched, where it opens instantly, even offline.</p></div></details>
+      <details class="faq-item"><summary>How is this different from “Download and Keep Originals”?</summary><div class="answer"><p>That setting brings every original back onto your iPhone. If your library is 150 GB and your phone was already full, it simply won’t fit. Untouched keeps only the videos and photos you choose, so you keep the space you freed. <a href="/guides/optimize-storage-vs-download-and-keep-originals/">Compare the two settings</a>.</p></div></details>
+      <details class="faq-item"><summary>Does Untouched compress or convert my videos?</summary><div class="answer"><p>No. It copies the original files Photos keeps for each item, byte for byte, and records a SHA-256 checksum for every file so you can verify them later.</p></div></details>
+      <details class="faq-item"><summary>How much space does it use?</summary><div class="answer"><p>Exactly the size of what you keep. A few favorite videos might be a few gigabytes, far less than bringing back your whole library.</p></div></details>
+      <details class="faq-item"><summary>Does it upload my videos anywhere?</summary><div class="answer"><p>No. There’s no account and no server; your files stay on your iPhone. The app sends anonymous usage statistics, such as whether a copy succeeded and how large it was, and never file names, locations or images. <a href="/privacy/">Read the privacy policy</a>.</p></div></details>
       <details class="faq-item"><summary>Why does it need access to all my photos?</summary><div class="answer"><p>The photo picker only tells an app which library item you chose when the app has full access, and that’s the only way to reach the item’s original files. Untouched only reads. It never changes or deletes anything in your library.</p></div></details>
       <details class="faq-item"><summary>Can I keep items from the Hidden album?</summary><div class="answer"><p>Yes. If the Hidden album is locked with Face ID, iOS doesn’t give apps the full item, so Untouched keeps the single file the system hands over. The app marks it “Picker copy”, and it may not be the original. For the complete original, turn off the lock in Settings › Apps › Photos while you add it, then turn it back on.</p></div></details>
-      <details class="faq-item"><summary>What happens if I stop paying?</summary><div class="answer"><p>Nothing you’ve kept is touched. You can still open, verify, export and delete everything. You just can’t add new items beyond the free one.</p></div></details>
+      <details class="faq-item"><summary>What happens if I stop paying?</summary><div class="answer"><p>Nothing you’ve kept is touched. You can still play, verify, export and delete everything. You just can’t add new items beyond the free one.</p></div></details>
       <details class="faq-item"><summary>What happens if I delete the app?</summary><div class="answer"><p>iOS deletes the app’s folder along with it, including everything kept in Untouched. Before deleting the app, copy the folder to another place in Files, to a computer or to a drive.</p></div></details>
-      <details class="faq-item"><summary>Does it copy new photos automatically?</summary><div class="answer"><p>No. You choose what to keep, and copying runs while the app is open.</p></div></details>
+      <details class="faq-item"><summary>Does it keep new videos automatically?</summary><div class="answer"><p>No. You choose what to keep, and copying runs while the app is open.</p></div></details>
       <details class="faq-item"><summary>Which devices and languages does it support?</summary><div class="answer"><p>iPhone with iOS {{min_ios}} or later. The app is available in English and Simplified Chinese.</p></div></details>
       <details class="faq-item"><summary>How do I restore a purchase on another iPhone?</summary><div class="answer"><p>Open the upgrade screen and tap Restore. Make sure both iPhones are signed in with the same Apple Account.</p></div></details>
     </div>
@@ -168,21 +183,22 @@
   <div class="wrap">
     <div class="section-head">
       <h2>Guides</h2>
-      <p>Straight answers about full-resolution photos on iPhone, whether or not you use Untouched.</p>
+      <p>Straight answers about videos and photos with Optimize iPhone Storage, whether or not you use Untouched.</p>
     </div>
     <ul class="guide-list">
+      <li><a href="/guides/iphone-videos-wont-play-icloud/"><h3>iPhone videos won’t play or take forever to load from iCloud?</h3></a><p>Why it happens, the “Unable to Load Video” error, and the fixes that fit a full phone.</p></li>
+      <li><a href="/guides/keep-specific-videos-on-iphone/"><h3>How to keep specific videos on your iPhone with Optimize Storage on</h3></a><p>There’s no per-video switch. Here are the ways around it.</p></li>
+      <li><a href="/guides/optimize-storage-vs-download-and-keep-originals/"><h3>Optimize iPhone Storage vs. Download and Keep Originals</h3></a><p>What each setting keeps where, and which one fits your phone.</p></li>
       <li><a href="/guides/why-iphone-photos-look-blurry/"><h3>Why do old photos and videos look blurry on my iPhone?</h3></a><p>The usual cause, how to tell, and what fixes it.</p></li>
-      <li><a href="/guides/keep-specific-photos-on-iphone/"><h3>Can you keep specific photos on your iPhone with Optimize Storage on?</h3></a><p>Not inside Photos. Here are the ways around it.</p></li>
-      <li><a href="/guides/optimize-storage-vs-download-and-keep-originals/"><h3>Optimize iPhone Storage vs. Download and Keep Originals</h3></a><p>What each setting stores where, and which to choose.</p></li>
-      <li><a href="/guides/copy-original-photos-off-iphone/"><h3>How to copy original photos off your iPhone without losing quality</h3></a><p>The transfer methods that keep the original file, and the ones that don’t.</p></li>
-      <li><a href="/compare/"><h3>Ways to keep full-resolution originals on an iPhone, compared</h3></a><p>Built-in settings, manual exports, a drive, and Untouched side by side.</p></li>
+      <li><a href="/guides/copy-original-photos-off-iphone/"><h3>How to copy original videos and photos off your iPhone without losing quality</h3></a><p>The transfer methods that keep the original file, and the ones that don’t.</p></li>
+      <li><a href="/compare/"><h3>Ways to keep full-quality videos on an iPhone, compared</h3></a><p>Built-in settings, manual exports, a drive, and Untouched side by side.</p></li>
     </ul>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap closing">
-    <h2>Pick the few you can’t lose. Keep them as they were taken.</h2>
+    <h2>Pick the videos you rewatch. Keep them ready to play.</h2>
     {{badge}}
   </div>
 </section>
