@@ -1,0 +1,80 @@
+<!--meta {
+  "path": "/zh/guides/copy-original-photos-off-iphone/",
+  "alt": "/guides/copy-original-photos-off-iphone/",
+  "lang": "zh",
+  "type": "article",
+  "nav": "guides",
+  "title": "怎么把 iPhone 上的照片和视频原件完整导出来，不损失画质？",
+  "h1": "怎么把 iPhone 上的照片和视频原件完整导出来，不损失画质？",
+  "crumb": "无损导出原件",
+  "crumbs": [["指南", "/zh/guides/"]],
+  "description": "使用转移原始文件而非二次转码的正确方式：导出未修改的原片、开启「所有照片数据」的隔空投送、USB 物理导入。避免画质受损的踩坑细节与官方规范。",
+  "about": ["从 iPhone 传输照片", "照片原件", "隔空投送", "导出未修改的原片"]
+} -->
+<section class="short-answer">
+  <h2>简短回答</h2>
+  <p>必须使用直接传输原始文件、绝不触发系统二次重新编码的途径：在「照片」中使用<strong>「导出未修改的原片」</strong>保存到外接硬盘或「文件」App；通过<strong>隔空投送（AirDrop）到 Mac 时务必在选项中勾选「所有照片数据」</strong>；或通过 <strong>USB 数据线直连</strong> 使用「图像捕捉」/「照片」App 导入。如果开启了「优化 iPhone 储存空间」，导出时系统会自动先从 iCloud 取回完整原件。切忌使用微信等即时通讯软件、邮件附件或开启「最兼容」选项，这些操作均会导致元数据丢失或视频被降质重编码。</p>
+</section>
+
+<h2>真正保证 100% 原始画质的方法</h2>
+
+<h3>1. 导出未修改的原片（保存至移动硬盘、U 盘或「文件」）</h3>
+<ol>
+  <li>将 Type-C / Lightning 外接硬盘或读卡器插入 iPhone。</li>
+  <li>在「照片」App 中选中你想要备份的照片和视频。</li>
+  <li>轻点左下角的「共享」按钮，向下滑动找到并轻点 <span class="ui">「导出未修改的原片」</span>。</li>
+  <li>在弹出的存储位置中，选择外接硬盘或 <span class="ui">我的 iPhone</span> 下的指定文件夹，轻点右上角「存储」。</li>
+</ol>
+<p>注意：对于经过裁切或滤镜调整的项目，该选项导出的是未经任何修改的原始母版文件。位于面容 ID 锁定的「已隐藏」相簿中的内容，需先在 <span class="ui">设置 › App › 照片</span> 中解锁后方可完整导出。</p>
+
+<h3>2. 隔空投送（AirDrop）到 Mac，必须开启「所有照片数据」</h3>
+<ol>
+  <li>选中项目后轻点「共享」。</li>
+  <li><strong>最关键一步：轻点屏幕顶部的「选项」（Options）</strong>。</li>
+  <li>将「包含」下方的 <span class="ui">「所有照片数据」</span> 开关打开。</li>
+  <li>在下方格式中勾选 <span class="ui">「当前」</span>（避免勾选「最兼容」，后者会将 HEIC/HEVC 强制转码为 JPEG/MOV）。</li>
+  <li>轻点完成，再通过 AirDrop 投送至 Mac。</li>
+</ol>
+<p>Apple 官方文档对「所有照片数据」的定义是：传输“带有完整编辑历史记录与全部 EXIF/GPS 元数据的原始文件”。只有 AirDrop 提供该专属通道。</p>
+
+<h3>3. 通过 USB 数据线导入电脑（Mac / PC）</h3>
+<p>使用数据线将 iPhone 连接至电脑：在 Mac 上打开「图像捕捉」（Image Capture）可直接将媒体文件逐个拖入指定文件夹，或通过 macOS「照片」导入；在 Windows 上，根据 Apple 官方建议使用「Apple 设备」App 与 Windows 照片。如果设备开启了 iCloud 优化，Apple 建议在导入前确保原件已拉取至本机。</p>
+
+<h3>4. 从 iCloud.com 网页端下载</h3>
+<p>在电脑浏览器访问 iCloud.com 登录你的 Apple 账户，进入「照片」，选定项目后轻点下载图标旁的下拉箭头，选择 <span class="ui">「未修改的原片」</span> 即可下载原始打包文件。</p>
+
+<h2>哪些常见做法会导致画质被压缩</h2>
+<ul>
+  <li><strong>微信、QQ 或邮件传输：</strong>国内社交软件出于节省服务器带宽机制，哪怕勾选“原图”，大部分短视频仍会被限制分辨率或二次压缩转码，实况照片（Live Photo）的动效视频部分通常会被剥离成静态静图。</li>
+  <li><strong>隔空投送勾选了「最兼容」：</strong>Apple 会自动在后台执行格式转换，将 4K 10-bit HDR/杜比视界 HEVC 视频降级转换为 8-bit SDR H.264/MOV，色彩动态范围出现不可逆损失。</li>
+  <li><strong>从「共享相簿」保存：</strong>Apple 官方技术规范明确注明：添加到共享相簿的照片会被缩减至长边最大 2048 像素，视频会被压缩至最长 720p 分辨率，绝非全分辨率原件。</li>
+  <li><strong>截屏或录屏：</strong>直接录屏仅抓取当前屏幕渲染的像素流，若开着储存优化，录下来的只是模糊预览副本。</li>
+</ul>
+
+<h2>在 Untouched 中管理和导出原件</h2>
+<p>Untouched 在导入时使用 Photos framework 底层资源导出接口，逐字节将原件写入本地沙盒目录（<span class="ui">文件 › 我的 iPhone › Untouched</span>），并为每个文件计算独立的 SHA-256 哈希值：</p>
+<ul>
+  <li><strong>直连 Mac 提取：</strong>用数据线连上 Mac，在访达（Finder）侧边栏选中 iPhone，进入 <span class="ui">「文件」</span> 标签页，直接把 Untouched 文件夹拖拽到 Mac 桌面即可。</li>
+  <li><strong>备份至移动硬盘：</strong>在「文件」App 中，将 Untouched 目录下的文件夹直接复制或移入外接硬盘。</li>
+  <li><strong>单项导出：</strong>在 Untouched 应用内打开任意项目，轻点 <span class="ui">「导出原件…」</span>，即可通过 AirDrop 分享完整的独立文件夹（包含实况照片配对文件、RAW+JPEG 原片等）。</li>
+</ul>
+
+{{app_card}}
+
+<div class="sources">
+  <h2>官方来源</h2>
+  <ul>
+    <li><a href="https://support.apple.com/guide/iphone/import-and-export-photos-and-videos-iph480caa1f3/ios">在 iPhone 上导入和导出照片与视频</a>，iPhone 使用手册 (iOS 27)</li>
+    <li><a href="https://support.apple.com/guide/iphone/share-photos-and-videos-iphf28f17237/ios">在 iPhone 上共享照片和视频</a>，iPhone 使用手册 (iOS 27)</li>
+    <li><a href="https://support.apple.com/en-us/120267">将照片和视频从 iPhone 或 iPad 传输到 Mac 或 PC</a>，Apple 支持</li>
+    <li><a href="https://support.apple.com/en-us/108306">归档或拷贝储存在 iCloud 中的信息</a>，Apple 支持</li>
+  </ul>
+</div>
+
+<div class="related">
+  <h2>相关指南</h2>
+  <ul>
+    <li><a href="/zh/guides/optimize-storage-vs-download-and-keep-originals/">「优化 iPhone 储存空间」与「下载并保留原片」：有什么区别？</a></li>
+    <li><a href="/zh/guides/keep-specific-videos-on-iphone/">开着「优化储存空间」，怎么让指定视频一直留在本机？</a></li>
+  </ul>
+</div>

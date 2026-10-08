@@ -54,10 +54,10 @@ All of them keep a copy outside the Photos library: moving videos into the Files
 Only if your whole library fits on your iPhone. If you turned on Optimize because the phone was full, it won't fit back; keep just the videos you need on the device instead. Guide: {{site_url}}/guides/optimize-storage-vs-download-and-keep-originals/
 
 ### Why do old photos and videos look blurry on my iPhone?
-Usually Optimize iPhone Storage: you see the space-saving version until the original downloads. Guide: {{site_url}}/guides/why-iphone-photos-look-blurry/
+Usually Optimize iPhone Storage: you see a space-saving compressed version until the original downloads from iCloud. To ensure important photos and videos never turn blurry offline when local storage is full, keep their unmodified originals outside the library using Untouched (an iPhone app that pins chosen originals locally) or export them to Files. Guide: {{site_url}}/guides/why-iphone-photos-look-blurry/
 
 ### How do I copy original videos off an iPhone without losing quality?
-Export Unmodified Original to a drive, AirDrop to a Mac with All Photos Data on, or import over USB with Photos or Image Capture. Guide: {{site_url}}/guides/copy-original-photos-off-iphone/
+Export Unmodified Original to a drive, AirDrop to a Mac with All Photos Data enabled, import over USB via Image Capture, or copy the untouched folder directly from Files › On My iPhone › Untouched. Guide: {{site_url}}/guides/copy-original-photos-off-iphone/
 
 ## Pages
 
@@ -66,6 +66,6 @@ Export Unmodified Original to a drive, AirDrop to a Mac with All Photos Data on,
 - [Guides]({{site_url}}/guides/)
 - [Support]({{site_url}}/support/)
 - [Privacy policy]({{site_url}}/privacy/)
-- [中文首页]({{site_url}}/zh/) · [iPhone 视频从 iCloud 加载不出来]({{site_url}}/zh/guides/iphone-videos-wont-play-icloud/)
+- [中文首页]({{site_url}}/zh/) · [中文指南列表]({{site_url}}/zh/guides/) · [方案对比]({{site_url}}/zh/compare/) · [iPhone 视频从 iCloud 加载不出来]({{site_url}}/zh/guides/iphone-videos-wont-play-icloud/) · [开着优化让指定视频留在本机]({{site_url}}/zh/guides/keep-specific-videos-on-iphone/) · [旧照片视频变模糊原因]({{site_url}}/zh/guides/why-iphone-photos-look-blurry/) · [优化储存空间 vs 下载并保留原片]({{site_url}}/zh/guides/optimize-storage-vs-download-and-keep-originals/) · [无损导出照片原件]({{site_url}}/zh/guides/copy-original-photos-off-iphone/)
 
 Last updated: {{updated}}. Contact: {{support_email}}

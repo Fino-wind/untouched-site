@@ -10,6 +10,9 @@
   <url>
     <loc>https://untouched.tetherme.app/compare/</loc>
     <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/compare/"/>
   </url>
   <url>
     <loc>https://untouched.tetherme.app/guides/</loc>
@@ -21,6 +24,9 @@
   <url>
     <loc>https://untouched.tetherme.app/guides/copy-original-photos-off-iphone/</loc>
     <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/guides/copy-original-photos-off-iphone/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/guides/copy-original-photos-off-iphone/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/guides/copy-original-photos-off-iphone/"/>
   </url>
   <url>
     <loc>https://untouched.tetherme.app/guides/iphone-videos-wont-play-icloud/</loc>
@@ -39,6 +45,9 @@
   <url>
     <loc>https://untouched.tetherme.app/guides/optimize-storage-vs-download-and-keep-originals/</loc>
     <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/guides/optimize-storage-vs-download-and-keep-originals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/guides/optimize-storage-vs-download-and-keep-originals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/guides/optimize-storage-vs-download-and-keep-originals/"/>
   </url>
   <url>
     <loc>https://untouched.tetherme.app/guides/why-iphone-photos-look-blurry/</loc>
@@ -69,11 +78,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/"/>
   </url>
   <url>
+    <loc>https://untouched.tetherme.app/zh/compare/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/compare/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/compare/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/compare/"/>
+  </url>
+  <url>
     <loc>https://untouched.tetherme.app/zh/guides/</loc>
     <lastmod>2026-09-30</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/guides/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/guides/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/guides/"/>
+  </url>
+  <url>
+    <loc>https://untouched.tetherme.app/zh/guides/copy-original-photos-off-iphone/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/guides/copy-original-photos-off-iphone/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/guides/copy-original-photos-off-iphone/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/guides/copy-original-photos-off-iphone/"/>
   </url>
   <url>
     <loc>https://untouched.tetherme.app/zh/guides/iphone-videos-wont-play-icloud/</loc>
@@ -88,6 +111,13 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/guides/keep-specific-videos-on-iphone/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/guides/keep-specific-videos-on-iphone/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/guides/keep-specific-videos-on-iphone/"/>
+  </url>
+  <url>
+    <loc>https://untouched.tetherme.app/zh/guides/optimize-storage-vs-download-and-keep-originals/</loc>
+    <lastmod>2026-09-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://untouched.tetherme.app/guides/optimize-storage-vs-download-and-keep-originals/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://untouched.tetherme.app/zh/guides/optimize-storage-vs-download-and-keep-originals/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://untouched.tetherme.app/guides/optimize-storage-vs-download-and-keep-originals/"/>
   </url>
   <url>
     <loc>https://untouched.tetherme.app/zh/guides/why-iphone-photos-look-blurry/</loc>

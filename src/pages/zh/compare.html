@@ -1,0 +1,79 @@
+<!--meta {
+  "path": "/zh/compare/",
+  "alt": "/compare/",
+  "lang": "zh",
+  "type": "article",
+  "nav": "",
+  "title": "在 iPhone 上保留原画质视频和照片原件的几种方案对比",
+  "h1": "在 iPhone 上保留原画质视频（和照片）的几种方案横向对比",
+  "crumb": "方案对比",
+  "description": "开着「优化 iPhone 储存空间」时，视频播放前都要从云端加载。下载并保留原片、导出到文件、拷入移动硬盘，以及 Untouched 的逐项对比。",
+  "about": ["照片原件", "优化 iPhone 储存空间", "相册备份", "视频播放"]
+} -->
+<section class="short-answer">
+  <h2>简短回答</h2>
+  <p>如果你的手机剩余空间充裕，<strong>「下载并保留原片」</strong>是让所有视频随时随开最直接的途径。如果装不下（例如 256 GB 的手机装着 150 GB 的图库），把你在乎的那几段核心视频保存在受优化影响的「照片」图库之外：免费的方式是手动<strong>导出到「文件」App</strong>；更省心且支持全文件配对与完整性校验的工程方式是使用 <strong>Untouched</strong>。若要防范设备遗失，建议定期在<strong>电脑或外接硬盘</strong>上建立离线冷备份。</p>
+</section>
+
+<h2>四种主流方式逐项对比</h2>
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>对比项</th><th>下载并保留原片</th><th>导出未修改原片到「文件」</th><th>拷贝到电脑或外接硬盘</th><th>Untouched</th></tr></thead>
+    <tbody>
+      <tr><th>留在 iPhone 上的原件</th><td>全部项目</td><td>仅你手动导出的那几项</td><td>无（保存在外接设备上）</td><td>仅你勾选挑选的项</td></tr>
+      <tr><th>占用的 iPhone 空间</th><td>整个图库的原始总大小</td><td>仅那些导出的原始文件体积</td><td>0 字节</td><td>仅勾选项的实际原始体积</td></tr>
+      <tr><th>图库其余内容</th><td>退出优化，全部占空间</td><td>继续在 iCloud 保持优化</td><td>继续在 iCloud 保持优化</td><td>继续在 iCloud 保持优化</td></tr>
+      <tr><th>实况照片视频、未编辑母版</th><td>完整保留（原生图库）</td><td>仅导出单一未修改母版</td><td>取决于所用的导出方式</td><td>包含实况视频、编辑数据、RAW等全套配对文件</td></tr>
+      <tr><th>后期校验文件是否完好</th><td>—</td><td>无校验手段</td><td>需自行计算哈希对账</td><td>每个文件均有独立的 SHA-256 校验码</td></tr>
+      <tr><th>设备丢失/损坏时防丢</th><td>是（依赖 iCloud 备份）</td><td>否（仅在本机目录）</td><td>是（脱离手机独立存在）</td><td>否，需另外将目录拷贝备份</td></tr>
+      <tr><th>操作成本</th><td>一键全局切换</td><td>每次需手动进共享菜单导出</td><td>需连线或插移动硬盘</td><td>在原生相册选择器中一键挑选</td></tr>
+      <tr><th>费用</th><td>免费</td><td>免费</td><td>需购置硬盘或电脑硬件</td><td>免费保留 1 项；或一次性买断/订阅</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>方案一：系统全局「下载并保留原片」</h2>
+<p>这是 iOS 内置的全局开关（位于 <span class="ui">设置 › 你的姓名 › iCloud › 照片</span>，iOS 27 中在 <span class="ui">iPhone 储存空间</span>）。每一张照片和每一段视频的母版都保存在手机上。只要手机装得下整个图库，这是最省心、最无需折腾的标准答案。但它的致命缺点是全库绑定：无法指定仅保留某些视频。</p>
+
+<h2>方案二：手动「导出未修改的原片」到「文件」App</h2>
+<p>在「照片」中选中要留存的项目，轻点共享，选择 <span class="ui">「导出未修改的原片」</span>，存入「我的 iPhone」目录。这是免费的原生解法。缺点是需要自行建立和管理文件目录，无法直观识别实况照片的多文件配对，且对于面容 ID 锁定的「已隐藏」相簿项目无法直接导出。</p>
+
+<h2>方案三：备份到电脑或外接移动硬盘</h2>
+<p>这是防范手机进水、意外损坏或遗失的最根本保障。使用 Type-C 移动硬盘直连导出，或在 Mac 上通过开启「所有照片数据」的隔空投送、USB 图像捕捉导入。缺点是它无法随时随地放在兜里拿出来看，更偏向静态冷存档。</p>
+
+<h2>民间常见的替代土办法为什么不够好</h2>
+<p>在社交网络和论坛上，经常有人推荐用网盘或播放器来代替，但实际体验往往充满割裂：</p>
+<ul>
+  <li><strong>国内网盘或云存储离线：</strong>把视频上传到百度网盘或阿里云盘再在手机端缓存。缺点是原片被传到了第三方服务器，不仅上传极慢，而且大部分网盘会对视频进行在线转码压缩，且不支持实况照片（Live Photo）的无缝播放。</li>
+  <li><strong>媒体播放器（如 Infuse / VLC / Plex）：</strong>把视频导入播放器的独立目录播放。这类 App 本身是为长视频电影设计的，用来管理从自己相册里挑选出来的几段家庭生活视频显得笨重而繁琐。</li>
+  <li><strong>把视频移入「文件」后在「照片」里彻底删除：</strong>虽然腾出了相册空间，但该视频会从 iCloud 照片中彻底除名，导致其他苹果设备再也无法通过图库看到它，失去了多端同步的便利。</li>
+</ul>
+
+<h2>Untouched：专为此场景打造的工程解法</h2>
+<p>Untouched 将上述所有手工操作浓缩为一步：它直接在本地建立受沙盒保护的原件镜像仓库，仅保留你在乎的那几段视频和照片。整个过程保持只读访问，不删除、不修改「照片」图库中的任何内容，iCloud 的备份依然完整无缺。此外，它在写入时自动为每个文件固化 SHA-256 校验和，提供原件防篡改保障。</p>
+
+{{app_card}}
+
+<h2>最推荐的组合用法</h2>
+<ol>
+  <li>手机空间紧张时，放心打开「优化 iPhone 储存空间」，让 iCloud 帮你腾出 100+ GB 空间。</li>
+  <li>对那些平时经常需要翻看、或者必须在断网时随时满画质播放的重要视频，通过 Untouched 或「文件」保存在本地沙盒中。</li>
+  <li>定期将重要的原件目录拷入移动硬盘或电脑，做好防丢容灾。</li>
+</ol>
+
+<div class="sources">
+  <h2>官方来源</h2>
+  <ul>
+    <li><a href="https://support.apple.com/en-us/105061">管理你的照片和视频储存空间</a>，Apple 支持</li>
+    <li><a href="https://support.apple.com/guide/iphone/import-and-export-photos-and-videos-iph480caa1f3/ios">在 iPhone 上导入和导出照片与视频</a>，iPhone 使用手册</li>
+    <li><a href="https://support.apple.com/en-us/120267">将照片和视频从 iPhone 传输到电脑</a>，Apple 支持</li>
+  </ul>
+</div>
+
+<div class="related">
+  <h2>相关指南</h2>
+  <ul>
+    <li><a href="/zh/guides/optimize-storage-vs-download-and-keep-originals/">「优化 iPhone 储存空间」与「下载并保留原片」：有什么区别？</a></li>
+    <li><a href="/zh/guides/keep-specific-videos-on-iphone/">开着「优化储存空间」，怎么让指定视频一直留在本机？</a></li>
+  </ul>
+</div>

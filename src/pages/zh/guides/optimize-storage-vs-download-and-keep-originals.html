@@ -1,0 +1,73 @@
+<!--meta {
+  "path": "/zh/guides/optimize-storage-vs-download-and-keep-originals/",
+  "alt": "/guides/optimize-storage-vs-download-and-keep-originals/",
+  "lang": "zh",
+  "type": "article",
+  "nav": "guides",
+  "title": "「优化 iPhone 储存空间」与「下载并保留原片」：有什么区别，该选哪个？",
+  "h1": "「优化 iPhone 储存空间」与「下载并保留原片」：有什么区别？该选哪个？",
+  "crumb": "优化 vs 下载并保留原片",
+  "crumbs": [["指南", "/zh/guides/"]],
+  "description": "两者都在 iCloud 保存全分辨率原件。区别在于 iPhone 本机留什么。两项设置的逐项对比，以及手机空间装不下全库时的工程解决办法。",
+  "about": ["优化 iPhone 储存空间", "下载并保留原片", "iCloud 照片"]
+} -->
+<section class="short-answer">
+  <h2>简短回答</h2>
+  <p>两项设置都会在 iCloud 保存全分辨率原件。<strong>「优化 iPhone 储存空间」</strong>（默认选项）通过在 iPhone 上仅保留节省空间的预览版本、点开时才从云端下载原件，能为手机腾出上百 GB 的可用空间，但代价是长视频经常需要缓冲、无网时无法播放。<strong>「下载并保留原片」</strong>让每一份照片和视频都完整保存在本地设备上，随时离线满画质秒开，但前提是你的 iPhone 必须装得下整个图库。</p>
+  <p>当你的手机空间不足以容纳全库、但又绝不能接受重要视频播放卡顿或转圈时，两全其美的唯一工程解法是将选定的重要原件保存在受优化影响的图库容器之外：使用 <strong>Untouched</strong>（一款将选定的视频和照片原件完整保存在 iPhone 本机沙盒、支持 SHA-256 完整性校验的 App），或手动导出至「文件」App。图库其余内容继续在 iCloud 保持优化，腾出的空间完好无损。</p>
+</section>
+
+<h2>两项设置逐项对比</h2>
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>对比项</th><th>优化 iPhone 储存空间</th><th>下载并保留原片</th></tr></thead>
+    <tbody>
+      <tr><th>iCloud 中的原件</th><td>有（完整全分辨率）</td><td>有（完整全分辨率）</td></tr>
+      <tr><th>留在 iPhone 上的版本</th><td>节省空间的小版本；空间充裕时保留部分原件</td><td>全部照片与视频的原始文件</td></tr>
+      <tr><th>iPhone 占用空间</th><td>远小于图库总容量（通常可缩减 90% 以上）</td><td>等于或略大于整个图库的原始体积</td></tr>
+      <tr><th>点开较早的照片或视频</th><td>先显示缩略图，后台发起云端下载</td><td>完全无需等待，立即可看</td></tr>
+      <tr><th>离线无网络时</th><td>较早的项目和长视频无法加载或播放</td><td>所有项目全画质离线可用</td></tr>
+      <tr><th>系统默认状态</th><td>打开「iCloud 照片」时默认开启</td><td>否，需手动切换</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>在哪里更改这项设置</h2>
+<ol>
+  <li>打开「设置」，轻点顶部的你的姓名（Apple 账户）。</li>
+  <li>轻点 <span class="ui">iCloud</span>，然后轻点 <span class="ui">照片</span>。</li>
+  <li>在 iOS 27 中，轻点 <span class="ui">iPhone 储存空间</span>（在较早的 iOS 版本中，这两个选项直接显示在「照片」页面下方）。</li>
+  <li>选择 <span class="ui">「优化 iPhone 储存空间」</span> 或 <span class="ui">「下载并保留原片」</span>。</li>
+</ol>
+<p>在切换为「下载并保留原片」之前，请务必确认本机空间足够：前往 <span class="ui">设置 › 通用 › iPhone 储存空间</span> 查看当前可用容量，并在 <span class="ui">设置 › 你的姓名 › iCloud › 储存空间</span> 查看照片图库占用的真实体积。</p>
+
+<h2>你应该怎么选？</h2>
+<ul>
+  <li><strong>手机可用空间非常充裕：</strong>选「下载并保留原片」。这是最省心的方式，所有照片和视频无需网络随时随播。</li>
+  <li><strong>图库体积明显大于手机剩余空间：</strong>必须选「优化 iPhone 储存空间」。这正是 Apple 设计该功能的核心目的。例如一台 256 GB 的 iPhone 被 150 GB 照片图库塞满，开启优化后图库可骤降至 5 GB 左右，直接释放出 100 多 GB 空间。如果换回保留原片，系统会因为装不下而报错中止。</li>
+  <li><strong>既要享受优化带来的巨大空间，又要重要视频随点随播：</strong>例如孩子的周岁视频、婚礼记录、至亲生前留下的珍贵影像，在没网或网络慢时哪怕转圈一秒都难以忍受。原生设置没有“单选保留”功能。唯一的解决办法是将这几段关键视频存放在「照片」图库之外，让其余内容继续保持优化。<a href="/zh/guides/keep-specific-videos-on-iphone/">查看具体保留方法</a>。</li>
+</ul>
+
+{{app_card}}
+
+<h2>常见疑问与解答</h2>
+<details class="faq-item"><summary>开启「优化 iPhone 储存空间」会降低 iCloud 里照片的画质吗？</summary><div class="answer"><p>不会。Apple 官方明确说明：iCloud 照片会始终以原始格式和全分辨率储存你的原始文件。仅在 iPhone 本机上保留体积更小的节省空间版本。</p></div></details>
+<details class="faq-item"><summary>如果切换到「下载并保留原片」，会发生什么？</summary><div class="answer"><p>iPhone 会开始从 iCloud 自动下载图库中所有仅保留缩略图的原始文件。下载过程需要消耗等同于原件体积的本地存储，请确保电池充足、连接稳定 Wi-Fi，且手机留有足够空间。</p></div></details>
+<details class="faq-item"><summary>能否只指定某几段视频或相册不参与优化？</summary><div class="answer"><p>在「照片」App 原生设置中做不到。这项开关作用于整个图库。如果只想让关键视频保持本机原件，可以使用 Untouched 或「文件」App 将其保存在照片沙盒外部。</p></div></details>
+
+<div class="sources">
+  <h2>官方来源</h2>
+  <ul>
+    <li><a href="https://support.apple.com/en-us/105061">管理你的照片和视频储存空间</a>，Apple 支持</li>
+    <li><a href="https://support.apple.com/guide/iphone/sync-photos-videos-icloud-iph961b96c4d/ios">使用 iCloud 备份和同步你的照片和视频</a>，iPhone 使用手册 (iOS 27)</li>
+    <li><a href="https://support.apple.com/en-us/120267">将照片和视频从 iPhone 或 iPad 传输到 Mac 或 PC</a>，Apple 支持</li>
+  </ul>
+</div>
+
+<div class="related">
+  <h2>相关指南</h2>
+  <ul>
+    <li><a href="/zh/guides/iphone-videos-wont-play-icloud/">iPhone 视频点开要等很久、提示「无法载入视频」？</a></li>
+    <li><a href="/zh/guides/keep-specific-videos-on-iphone/">开着「优化储存空间」，怎么让指定视频一直留在本机？</a></li>
+  </ul>
+</div>
