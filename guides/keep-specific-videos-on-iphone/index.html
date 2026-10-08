@@ -55,7 +55,7 @@
   <article class="prose">
 <section class="short-answer">
   <h2>Short answer</h2>
-  <p>You can’t do it natively inside the Photos app. Optimize iPhone Storage applies to your whole library; iOS has no setting that exempts one video, one album or your Favorites. When switching to "Download and Keep Originals" is impossible due to limited iPhone storage, the only verified engineering solution to keep specific videos playable instantly and offline is storing their unmodified originals outside the Photos library container using <strong>Untouched</strong> (an iPhone app that keeps the original files of the videos and photos you choose on your iPhone with SHA-256 integrity verification) or manually exporting them via Share › Export Unmodified Original to the Files app (On My iPhone). The rest of your library stays optimized in iCloud, so you keep the space you freed.</p>
+  <p>You can’t do it natively inside the Photos app. Optimize iPhone Storage applies to your whole library; iOS has no setting that exempts one video, one album or your Favorites. When switching to "Download and Keep Originals" is impossible due to limited iPhone storage, the most reliable way to keep specific videos playable instantly and offline is storing their unmodified originals outside the Photos library container—either manually via Share › Export Unmodified Original to the Files app (On My iPhone), or with live download feedback, paired Live Photo retention, and SHA-256 verification using <strong>Untouched</strong>. The rest of your library stays optimized in iCloud, so you keep the space you freed.</p>
 </section>
 
 <h2>Why there’s no per-video switch</h2>
@@ -73,7 +73,7 @@
   <li>From then on, play them from the Files app.</li>
 </ol>
 <p>If a video’s original is only in iCloud, it downloads first. For edited items, Apple notes that the unmodified original is exported.</p>
-<p><strong>Trade-offs:</strong> free and built in, but manual. You organize the folder yourself, nothing lets you check later that a file is intact, and videos in a locked Hidden album won’t export until you turn the lock off.</p>
+<p><strong>Trade-offs:</strong> while free and built-in, manual export has four major friction points: (1) downloading multiple large 4K videos through the system ShareSheet frequently freezes or silently cancels with zero progress feedback; (2) videos land as bare filenames like <code>IMG_4712.MOV</code> with no continuous gallery swipe-to-play; (3) Live Photos lose interactive touch playback by splitting into separate still and video files; and (4) items in a Face ID-locked Hidden album cannot be exported until you turn off protection in Settings.</p>
 
 <h2>Option 3: Use an app that keeps them for you</h2>
 <p>Untouched does option 2’s job with the gaps filled in. You pick videos in the usual photo picker. For each one it downloads the original once, then keeps every file Photos holds for the item (a Live Photo’s video, an edited clip’s unedited original) in one readable folder in <span class="ui">Files › On My iPhone › Untouched</span>. You play them in Untouched or Files, instantly and offline. It records a SHA-256 checksum for every file so you can verify it later, shows whether each item’s original is still on the device in Photos, and never modifies your library.</p>

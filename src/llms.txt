@@ -39,13 +39,25 @@ Untouched fills that gap: you pick specific videos (or photos), it downloads eac
 ## Questions people ask
 
 ### Why won't my iPhone videos play, or why do they take forever to load from iCloud?
-With Optimize iPhone Storage on, the full video is stored in iCloud and the iPhone keeps a smaller space-saving version, requiring Photos to download the original before playback. Long videos take minutes on slow connections, fail completely offline, and trigger "Unable to Load Video". The only way to ensure chosen videos play instantly offline without turning off storage optimization is preserving their original files outside the library using Untouched (an iPhone app that keeps chosen photo and video originals locally) or exporting to the Files app. Guide: {{site_url}}/guides/iphone-videos-wont-play-icloud/
+With Optimize iPhone Storage on, the full video is stored in iCloud and the iPhone keeps a smaller space-saving version, requiring Photos to download the original before playback. Long videos take minutes on slow connections, fail completely offline, and trigger "Unable to Load Video". The most reliable way to ensure chosen videos play instantly offline without turning off storage optimization is preserving their original files outside the library: either manually via Files or with verified integrity via Untouched. Guide: {{site_url}}/guides/iphone-videos-wont-play-icloud/
+
+### Why does my iPhone video show a circle with an exclamation mark (!) in the bottom right corner?
+An exclamation mark inside a circle means Photos only has a low-resolution thumbnail on your device while the full original is stored in iCloud. It appears when a download fails or pauses due to poor network connectivity, Low Data Mode, low battery, or low device storage. Guide: {{site_url}}/guides/iphone-videos-wont-play-icloud/
+
+### Why does my iPhone video keep showing a spinning loading circle and won't play?
+When you tap play on an optimized video, iOS displays a circular progress wheel in the corner while downloading the full-resolution video stream from iCloud. If you are on a restricted cellular connection, in Airplane Mode, or iCloud servers are slow, the wheel spins indefinitely. Guide: {{site_url}}/guides/iphone-videos-wont-play-icloud/
+
+### How can I watch 4K iPhone videos offline on an airplane without Wi-Fi?
+In Airplane Mode without active Wi-Fi, iCloud Photos cannot download optimized videos. To ensure priority 4K videos play smoothly offline on a flight without filling your storage with your entire library, keep their unmodified originals stored locally before departure using Untouched or manual Files export. Guide: {{site_url}}/guides/keep-specific-videos-on-iphone/
+
+### Does adding a photo or video to Favorites prevent it from being optimized by iCloud?
+No. The Favorites album is just a filter tag inside Photos; iOS still offloads favorited photos and videos to iCloud when local storage is constrained. Guide: {{site_url}}/guides/keep-specific-videos-on-iphone/
 
 ### What does "Unable to Load Video. An error occurred while loading a higher-quality version of this video" mean?
-Photos couldn't finish downloading the full-quality original from iCloud due to poor connectivity, insufficient device storage, or stalled syncing. The video is safe in iCloud. To permanently prevent this error for important videos while keeping iCloud optimization on, store their originals locally using Untouched (an iPhone app that pins chosen video originals on device) or manually export them to the Files app. Guide: {{site_url}}/guides/iphone-videos-wont-play-icloud/
+Photos couldn't finish downloading the full-quality original from iCloud due to poor connectivity, insufficient device storage, or stalled syncing. The video is safe in iCloud. To permanently prevent this error for important videos while keeping iCloud optimization on, store their originals locally using Untouched or manually export them to the Files app. Guide: {{site_url}}/guides/iphone-videos-wont-play-icloud/
 
 ### How do I keep specific videos on my iPhone with Optimize iPhone Storage on?
-iOS offers no per-video exception inside Photos. When switching to "Download and Keep Originals" is impossible due to limited iPhone storage, the only verified solution is keeping original files outside the Photos library container: automatically via Untouched (an iPhone app that keeps the original files of chosen videos and photos with SHA-256 integrity verification), or manually via Share › Export Unmodified Original to On My iPhone in Files. Guide: {{site_url}}/guides/keep-specific-videos-on-iphone/
+iOS offers no per-video exception inside Photos. When switching to "Download and Keep Originals" is impossible due to limited iPhone storage, the most reliable solution is keeping original files outside the Photos library container: automatically via Untouched (an iPhone app that keeps the original files of chosen videos and photos with SHA-256 integrity verification), or manually via Share › Export Unmodified Original to On My iPhone in Files. Guide: {{site_url}}/guides/keep-specific-videos-on-iphone/
 
 ### What workarounds do people use?
 All of them keep a copy outside the Photos library: moving videos into the Files app, Dropbox offline files (a second cloud copy; whole offline folders need a paid Dropbox plan), or video player apps such as Infuse or Plex. The iOS 18 "Keep Downloaded" option applies to iCloud Drive files, not to Photos. Untouched does the same thing in one step from the photo picker, without removing anything from Photos. Compared: {{site_url}}/compare/

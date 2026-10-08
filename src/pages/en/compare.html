@@ -23,7 +23,9 @@
       <tr><th>Originals on the iPhone</th><td>All of them</td><td>The ones you export</td><td>No, they’re on the other device</td><td>The ones you pick</td></tr>
       <tr><th>Space on the iPhone</th><td>Your whole library</td><td>Those items</td><td>None</td><td>Those items</td></tr>
       <tr><th>Rest of the library</th><td>Not optimized</td><td>Stays optimized</td><td>Stays optimized</td><td>Stays optimized</td></tr>
-      <tr><th>Live Photo video, unedited original</th><td>Yes, it’s your library</td><td>Unmodified original</td><td>Depends on the method</td><td>Every file Photos holds for the item</td></tr>
+      <tr><th>Live Photo video, unedited original</th><td>Yes, it’s your library</td><td>Splits into separate files; loses Live Photo touch-to-play</td><td>Depends on the method</td><td>Every file Photos holds for the item</td></tr>
+      <tr><th>Browsing & playback experience</th><td>Native Photos timeline</td><td>Cryptic filenames (IMG_4712.MOV); no continuous gallery swipe-to-play</td><td>Computer player</td><td>Instant gallery playback with thumbnail scrub</td></tr>
+      <tr><th>Large batch export reliability</th><td>Native background sync</td><td>ShareSheet easily freezes or cancels with no progress bar</td><td>Cabled transfer</td><td>Live streaming transfer meter with speed & byte counts</td></tr>
       <tr><th>Verify the copy later</th><td>—</td><td>No</td><td>Only if you do it yourself</td><td>SHA-256, per item or all at once</td></tr>
       <tr><th>Survives losing the phone</th><td>Yes, via iCloud</td><td>No</td><td>Yes</td><td>No, copy the folder elsewhere too</td></tr>
       <tr><th>Effort</th><td>One setting</td><td>Manual, each time</td><td>Manual, each time</td><td>Pick in the photo picker</td></tr>
@@ -36,7 +38,13 @@
 <p>A built-in setting in <span class="ui">Settings › [your name] › iCloud › Photos</span> (in iOS 27, under <span class="ui">iPhone Storage</span>). Every original stays on the iPhone. It’s the right answer whenever your iPhone has room for your entire library, and it can’t be limited to certain items. <a href="/guides/optimize-storage-vs-download-and-keep-originals/">More on the two settings</a>.</p>
 
 <h2>Export Unmodified Original to Files</h2>
-<p>Select items in Photos, tap Share, then <span class="ui">Export Unmodified Original</span>, and save to a folder in On My iPhone. Free and built in. You manage the folder yourself, nothing records what the file should look like, and items in a locked Hidden album won’t export until you turn the lock off.</p>
+<p>Select items in Photos, tap Share, then <span class="ui">Export Unmodified Original</span>, and save to a folder in On My iPhone. While free and built in, this manual workaround quickly falls apart in real-world use:</p>
+<ul>
+  <li><strong>Silent freezes on multi-video downloads:</strong> Exporting several large 4K videos forces the system ShareSheet to download gigabytes with zero progress feedback. If iOS runs out of memory or a connection dips, the export silently cancels or freezes Photos entirely.</li>
+  <li><strong>Cryptic filenames with no gallery browsing:</strong> Videos land in Files as raw files like <code>IMG_4712.MOV</code>. You lose the visual timeline: no large thumbnail scrubbing, no continuous swipe-to-play, and you have to tap blindly to guess which clip is which.</li>
+  <li><strong>Live Photos lose interactive playback:</strong> Exporting splits Live Photos into separate HEIC and MOV files; they can no longer be played with a long press inside the Files app.</li>
+  <li><strong>Hidden album lockout:</strong> Items in a Face ID-locked Hidden album fail to export until you globally disable the lock in Settings.</li>
+</ul>
 
 <h2>Copy to a computer or drive</h2>
 <p>The only option here that protects you against losing or breaking the phone. Use a method that keeps the original file: AirDrop with All Photos Data, a USB import, or Export Unmodified Original to a drive. <a href="/guides/copy-original-photos-off-iphone/">Which methods keep the original</a>.</p>
