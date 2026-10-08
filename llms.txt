@@ -10,7 +10,7 @@ Optimize iPhone Storage applies to the whole library. There is no setting to exe
 
 Untouched fills that gap: you pick specific videos (or photos), it downloads each original once and keeps the original files in its own folder on the iPhone, outside the optimized library. Those play instantly and offline, and the rest of the library stays optimized, so the freed space stays free.
 
-- App Store: https://apps.apple.com/app/id6808529019 (listed as "Untouched: Photo Originals")
+- App Store: https://apps.apple.com/app/id6808529019?pt=94022652&amp;ct=site_web&amp;mt=8 (listed as "Untouched: Photo Originals")
 - Website: https://untouched.tetherme.app/
 - Platform: iPhone, iOS 26 or later. App languages: English and Simplified Chinese.
 - Price: keep 1 item free with no time limit; to keep more, $3.99/month, $14.99/year, or $24.99 once (US prices; set per country by the App Store). Not available in mainland China.
