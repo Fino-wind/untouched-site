@@ -41,6 +41,13 @@
 <p>Untouched does option 2’s job with the gaps filled in. You pick videos in the usual photo picker. For each one it downloads the original once with a live progress bar, then keeps every file Photos holds for the item (a Live Photo’s video, an edited clip’s unedited original) in one readable folder in <span class="ui">Files › On My iPhone › Untouched</span>. You play them in Untouched or Files, instantly and offline. It records a SHA-256 checksum for every file so you can verify it later, shows whether each item’s original is still on the device in Photos, and never modifies your library.</p>
 <p><strong>Trade-offs:</strong> it uses space for what you keep; one item is free and keeping more is paid; and it isn’t a backup. Deleting the app deletes its folder.</p>
 
+<h2>Why Cloud Drives (Google Drive, Dropbox) and Players (VLC) Fail</h2>
+<p>Generic web answers often vaguely suggest uploading videos to Google Drive or installing VLC. Neither solves the underlying problem:</p>
+<ul>
+  <li><strong>Cloud drives (Google Drive, Dropbox, OneDrive):</strong> Uploading to another cloud does not give you offline playback. You are merely paying for a second cloud service that still requires internet access to stream. Downloading them back creates duplicates, risks cloud re-compression, and strips Live Photo interactivity.</li>
+  <li><strong>Third-party media players (VLC, Infuse):</strong> Players like VLC can only play files that are <em>already physically stored on your iPhone</em>. When Optimize Storage is active, the original 4K video is in iCloud, not on your device. VLC cannot download originals from your iCloud Photo Library; opening an optimized video in VLC results in an error or a tiny thumbnail.</li>
+</ul>
+
 {{app_card}}
 
 <h2>Which to choose</h2>
@@ -64,6 +71,8 @@
 <h2>Common questions</h2>
 <details class="faq-item"><summary>Can I watch 4K videos on an airplane without Wi-Fi if Optimize Storage is on?</summary><div class="answer"><p>Not if they are only stored in iCloud. When you turn on Airplane Mode or board a flight without Wi-Fi, optimized videos cannot be downloaded. Keep the specific videos you want to watch stored outside the library in Files or Untouched before your flight.</p></div></details>
 <details class="faq-item"><summary>Does adding a video to Favorites force it to stay downloaded?</summary><div class="answer"><p>No. Favorites is only an album tag inside Photos. iOS still offloads favorited videos to iCloud when local storage runs low, leaving low-res thumbnails that require a download to play.</p></div></details>
+<details class="faq-item"><summary>Can I just upload my videos to Google Drive or Dropbox to watch offline?</summary><div class="answer"><p>No. Cloud storage services require an active internet connection to stream videos. To watch them offline, you would have to manually mark each video for offline use in that app, creating duplicate copies, paying for separate cloud subscriptions, and potentially losing full 4K HDR quality during cloud transcoding.</p></div></details>
+<details class="faq-item"><summary>Will installing VLC or another media player fix iCloud video playback?</summary><div class="answer"><p>No. Third-party video players like VLC can only play media files already stored on your iPhone's local flash storage. When Optimize Storage is on, your iPhone only has a low-res thumbnail locally. VLC cannot connect to iCloud to download optimized originals.</p></div></details>
 <details class="faq-item"><summary>Why does exporting videos to the Files app sometimes freeze or fail?</summary><div class="answer"><p>Selecting multiple 4K videos in Photos and tapping Share › Export Unmodified Original forces the system to download gigabytes in the background without a progress meter. If memory runs low or Wi-Fi drops, the export silently cancels or freezes.</p></div></details>
 <details class="faq-item"><summary>Why not just use the Files app to store videos?</summary><div class="answer"><p>While free, the Files app lists videos as cryptic names like <code>IMG_4712.MOV</code> with no visual timeline grid. You cannot swipe horizontally to the next video like in a photo album, and Live Photos lose their motion. Untouched gives you a native photo-album experience with thumbnail previews and continuous swipe-to-play.</p></div></details>
 
