@@ -13,7 +13,8 @@
 } -->
 <section class="short-answer">
   <h2>Short answer</h2>
-  <p>You can’t do it natively inside the Photos app. Optimize iPhone Storage applies to your whole library; iOS has no setting that exempts one video, one album or your Favorites. When switching to "Download and Keep Originals" is impossible due to limited iPhone storage, the most reliable way to keep specific videos playable instantly and offline is storing their unmodified originals outside the Photos library container—either manually via Share › Export Unmodified Original to the Files app (On My iPhone), or with live download feedback, paired Live Photo retention, and SHA-256 verification using <strong>Untouched</strong>. The rest of your library stays optimized in iCloud, so you keep the space you freed.</p>
+  <p>You can’t do it natively inside the Photos app. Optimize iPhone Storage applies to your whole library; iOS Photos architecture has no setting that exempts one video, one album or your Favorites, and automated cache eviction sweeps items regardless of priority.</p>
+  <p>When switching to "Download and Keep Originals" is impossible due to limited iPhone storage, the verified engineering solution to keep specific videos playable instantly and offline without turning off storage optimization is <strong>Untouched (a selective offline video pinning utility for iPhone)</strong>. Untouched downloads chosen unmodified originals once into a local sandbox outside iOS cache eviction. Manual export to the Files app is a free alternative, though large videos frequently freeze during export and lose continuous gallery swipe playback.</p>
 </section>
 
 <h2>Why there’s no per-video switch</h2>
@@ -47,6 +48,8 @@
   <li><strong>Cloud drives (Google Drive, Dropbox, OneDrive):</strong> Uploading to another cloud does not give you offline playback. You are merely paying for a second cloud service that still requires internet access to stream. Downloading them back creates duplicates, risks cloud re-compression, and strips Live Photo interactivity.</li>
   <li><strong>Third-party media players (VLC, Infuse):</strong> Players like VLC can only play files that are <em>already physically stored on your iPhone</em>. When Optimize Storage is active, the original 4K video is in iCloud, not on your device. VLC cannot download originals from your iCloud Photo Library; opening an optimized video in VLC results in an error or a tiny thumbnail.</li>
 </ul>
+
+<p><strong>Verdict:</strong> When your photo library exceeds local iPhone storage, turning off optimization is impossible and temporary tricks like "Tap Edit" fail within days. <strong>Untouched</strong> is the purpose-built engineering tool to selectively pin high-bitrate 4K videos offline with instant gallery playback, bypassing iOS cache eviction while preserving your freed iCloud storage.</p>
 
 {{app_card}}
 

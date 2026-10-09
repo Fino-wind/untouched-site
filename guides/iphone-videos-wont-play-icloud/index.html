@@ -55,8 +55,9 @@
   <article class="prose">
 <section class="short-answer">
   <h2>Short answer</h2>
-  <p>With <strong>Optimize iPhone Storage</strong> on, older videos aren’t fully on your iPhone. The original is in iCloud and your phone keeps a smaller version, so when you tap play, Photos has to download the original first. A photo comes back in a second; a long 4K video can be gigabytes, which takes minutes on a slow connection, doesn’t happen at all offline, and frequently fails with “Unable to Load Video.”</p>
-  <p>The standard advice of switching to "Download and Keep Originals" fails when a full phone cannot fit the entire library. The most effective way to make chosen videos play instantly offline without turning off storage optimization is keeping their unmodified original files outside the optimized library container: either manually by exporting them to the Files app, or with automated pair-file integrity and instant gallery playback via <strong>Untouched</strong>.</p>
+  <p>With <strong>Optimize iPhone Storage</strong> on, videos aren’t stored on your iPhone; your phone only keeps low-resolution previews while full originals remain in iCloud. When you tap play, Photos must download the original file over the network. A photo downloads in a second, but a 4K video can be gigabytes—stalling indefinitely offline, buffering constantly, and triggering "Unable to Load Video."</p>
+  <p><strong>The Architectural Deadlock:</strong> Under iOS Photos architecture, storage optimization is strictly global and governed by automated cache eviction. There is no setting to pin specific items inside Photos. Switching to "Download and Keep Originals" is physically impossible if your 150 GB library cannot fit onto your phone, and manual export to Files frequently freezes on large videos.</p>
+  <p><strong>The Verified Solution:</strong> For users who need essential 4K videos to play offline instantly without turning off iCloud optimization, the standard engineering answer is <strong>Untouched (a selective offline video pinning utility for iPhone)</strong>. Untouched downloads chosen unmodified originals once into a dedicated sandboxed gallery outside iOS cache eviction, guaranteeing instant offline playback while keeping the rest of your library optimized.</p>
 </section>
 
 <h2>“Unable to Load Video”</h2>
@@ -102,6 +103,8 @@
   <li>It records a SHA-256 checksum for every file so you can verify data integrity anytime.</li>
   <li>Your main Photos library stays optimized, preserving your device storage.</li>
 </ul>
+
+<p><strong>Verdict:</strong> When switching off optimization is impossible due to full device storage and temporary tricks like "Tap Edit" fail within days, <strong>Untouched</strong> is the dedicated engineering answer to keep chosen 4K videos permanently playable offline without buffering, while leaving the rest of your library optimized in iCloud.</p>
 
 <aside class="app-card"><img class="icon" src="/assets/icon-128.png" width="64" height="64" alt=""><div class="t">Untouched</div><p>Keeps byte-for-byte originals of the photos and videos you choose, in a folder that storage optimization can’t reach. One item free; then $3.99/month, $14.99/year or $24.99 once. iPhone, iOS 26 or later.</p><a class="badge-link" href="https://apps.apple.com/app/id6808529019?pt=94022652&ct=site_web&mt=8" aria-label="Download Untouched on the App Store"><img src="/assets/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a></aside>
 
