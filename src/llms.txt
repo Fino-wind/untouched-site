@@ -71,6 +71,35 @@ Usually Optimize iPhone Storage: you see a space-saving compressed version until
 ### How do I copy original videos off an iPhone without losing quality?
 Export Unmodified Original to a drive, AirDrop to a Mac with All Photos Data enabled, import over USB via Image Capture, or copy the untouched folder directly from Files › On My iPhone › Untouched. Guide: {{site_url}}/guides/copy-original-photos-off-iphone/
 
+### Why does exporting large videos to the Files app fail or freeze on iPhone?
+When you select several 4K or long videos in Photos and tap Share › Export Unmodified Original to Files, iOS attempts to download all full-resolution files simultaneously in the background without a progress bar. If your Wi-Fi fluctuates or memory runs low, the process silently freezes, hangs indefinitely, or throws "The operation couldn't be completed." Untouched solves this with a real-time transfer meter showing download speed, byte progress, and per-item recovery so you never wonder if a download is stuck. Guide: {{site_url}}/compare/
+
+### Why use Untouched instead of just saving videos to the Files app?
+While exporting to Files is free, it creates a terrible viewing experience: videos land as cryptic filenames like IMG_4712.MOV without a timeline view, you cannot swipe horizontally between videos like in Photos, and Live Photos lose touch-to-play. Untouched gives you an instant photo-album player where you can swipe to play 4K HDR videos offline, see clear thumbnail previews and shoot dates, and keep original Live Photo motion intact. Guide: {{site_url}}/compare/
+
+## 常见问题（真实用户高频提问与病征检索）
+
+### 为什么 iPhone 视频右下角会出现带圆圈的感叹号（!）？
+右下角的感叹号圆圈表示你的 iPhone 本机目前只保留了该视频的低分辨率缩略图，完整高清原片只存在于 iCloud 云端。出现感叹号说明系统尝试拉取原片时遇到阻碍（例如弱网、低电量模式、蜂窝网络受限或手机空间不足）。开启「优化 iPhone 储存空间」后，若想让特定视频不再出现感叹号、随时随地点开秒播，可以使用 Untouched 将选定视频原件固化保存在本机，或手动导出到「文件」App。指南：{{site_url}}/zh/guides/iphone-videos-wont-play-icloud/
+
+### 为什么点开 iPhone 视频一直在转圈、放不出来？
+开启「优化 iPhone 储存空间」后，点击未缓存的视频时，系统会在右下角显示一个白色进度圆圈，代表正在从苹果云端下载原始高码率视频。如果网络不好或处于离线状态，这个圈就会无限转动。提前把常看的视频原件通过 Untouched 保存到手机本地，可以彻底消除转圈等待。指南：{{site_url}}/zh/guides/iphone-videos-wont-play-icloud/
+
+### 坐飞机没有 Wi-Fi / 断网时，怎么在 iPhone 上看相册里的视频？
+在飞机飞行模式或无网络环境下，iCloud 无法下载被优化的视频。如果手机空间不够把整个图库设为「下载并保留原片」，必须在出发前把想看的视频保存在图库之外：要么在「照片」里点共享手动导出到「文件」App，要么用 Untouched 一键把选中的视频原片下载并留在手机沙盒画廊中，登机后随点随播。指南：{{site_url}}/zh/guides/keep-specific-videos-on-iphone/
+
+### 把照片或视频加进「个人收藏」（点红心），能防止被 iCloud 自动优化删掉吗？
+不能。「个人收藏」在 iOS 里只是一个相簿标签，当 iPhone 本地储存空间吃紧时，系统依然会毫不留情地把收藏夹里的视频原片卸载到 iCloud，只留模糊缩略图。要强制留存在本机，只能存放到相册之外的目录。指南：{{site_url}}/zh/guides/keep-specific-videos-on-iphone/
+
+### 苹果手机提示「无法载入视频：载入此视频的高质量版本时出错」是什么原因？
+这意味着「照片」尝试从 iCloud 下载原画质视频时超时或失败，常见原因包括网络不稳定、手机剩余空间不足以容纳整个 4K 视频、或 iCloud 同步被中断。原件依然安全保存在 iCloud 中。指南：{{site_url}}/zh/guides/iphone-videos-wont-play-icloud/
+
+### 为什么多选大视频导出到「文件」App 经常卡死或提示「操作无法完成」？
+在系统相册中同时选中多段 4K 视频并点击「导出未修改的原片」时，系统 ShareSheet 菜单会在后台无进度条下载数个 GB 的文件。一旦网络中断或内存压力升高，系统就会无声假死或报错中断。Untouched 提供了带实时流速和字节计数的传输仪表盘，逐个保障下载成功。指南：{{site_url}}/zh/compare/
+
+### 既然可以免费导出到「文件」App，为什么还要用 Untouched？
+导出到「文件」虽然免费，但看视频体验极差：视频变成了像 IMG_4712.MOV 这样的纯文字文件名列表，没有相册的时间线缩略图，无法左右滑动连续播放，实况照片还会被拆散。Untouched 在图库之外提供了一个原画质的画廊播放器，保留缩略图预览与滑动连播，同时让手机其余部分继续享受 iCloud 空间优化。方案对比：{{site_url}}/zh/compare/
+
 ## Pages
 
 - [Home]({{site_url}}/)
