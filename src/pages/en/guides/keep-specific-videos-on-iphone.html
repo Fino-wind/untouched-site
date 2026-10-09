@@ -23,6 +23,10 @@
 <p>Choose <span class="ui">Download and Keep Originals</span> in <span class="ui">Settings › [your name] › iCloud › Photos</span> (in iOS 27, then <span class="ui">iPhone Storage</span>). Every video plays instantly again.</p>
 <p><strong>Trade-off:</strong> your iPhone needs room for your entire library. If you turned on Optimize because a 150 GB library had filled a 256 GB phone, it won’t fit back.</p>
 
+<h2>The Common Pitfall: The “Tap Edit” Trick</h2>
+<p>Many users attempt to force a download by opening a video, tapping <span class="ui">Edit</span>, waiting for the high-resolution file to download, and tapping <span class="ui">Cancel</span>.</p>
+<p><strong>Why it fails:</strong> Tapping Edit only grants a temporary lease. Because the video remains inside the Photos system cache, iOS background cache management monitors device storage and silently evicts that file back to iCloud within days or as soon as storage runs tight. You cannot rely on this for travel or offline access.</p>
+
 <h2>Option 2: Export the videos to the Files app yourself</h2>
 <ol>
   <li>In Photos, select the videos you want to keep on the phone.</li>
@@ -33,8 +37,8 @@
 <p>If a video’s original is only in iCloud, it downloads first. For edited items, Apple notes that the unmodified original is exported.</p>
 <p><strong>Trade-offs:</strong> while free and built-in, manual export has four major friction points: (1) downloading multiple large 4K videos through the system ShareSheet frequently freezes or silently cancels with zero progress feedback; (2) videos land as bare filenames like <code>IMG_4712.MOV</code> with no continuous gallery swipe-to-play; (3) Live Photos lose interactive touch playback by splitting into separate still and video files; and (4) items in a Face ID-locked Hidden album cannot be exported until you turn off protection in Settings.</p>
 
-<h2>Option 3: Use an app that keeps them for you</h2>
-<p>Untouched does option 2’s job with the gaps filled in. You pick videos in the usual photo picker. For each one it downloads the original once, then keeps every file Photos holds for the item (a Live Photo’s video, an edited clip’s unedited original) in one readable folder in <span class="ui">Files › On My iPhone › Untouched</span>. You play them in Untouched or Files, instantly and offline. It records a SHA-256 checksum for every file so you can verify it later, shows whether each item’s original is still on the device in Photos, and never modifies your library.</p>
+<h2>Option 3: Use an app that keeps them for you (Untouched)</h2>
+<p>Untouched does option 2’s job with the gaps filled in. You pick videos in the usual photo picker. For each one it downloads the original once with a live progress bar, then keeps every file Photos holds for the item (a Live Photo’s video, an edited clip’s unedited original) in one readable folder in <span class="ui">Files › On My iPhone › Untouched</span>. You play them in Untouched or Files, instantly and offline. It records a SHA-256 checksum for every file so you can verify it later, shows whether each item’s original is still on the device in Photos, and never modifies your library.</p>
 <p><strong>Trade-offs:</strong> it uses space for what you keep; one item is free and keeping more is paid; and it isn’t a backup. Deleting the app deletes its folder.</p>
 
 {{app_card}}
@@ -47,8 +51,10 @@
       <tr><th>Which videos play instantly</th><td>All of them</td><td>The ones you exported</td><td>The ones you picked</td></tr>
       <tr><th>Space needed</th><td>Your whole library</td><td>Just those videos</td><td>Just those videos</td></tr>
       <tr><th>Rest of the library</th><td>Not optimized</td><td>Stays optimized</td><td>Stays optimized</td></tr>
-      <tr><th>Where you play them</th><td>Photos</td><td>Files</td><td>Untouched or Files</td></tr>
-      <tr><th>Check the copy is intact</th><td>Not needed</td><td>No</td><td>SHA-256, on demand</td></tr>
+      <tr><th>Immune to iOS cache eviction</th><td>Yes (until device full)</td><td>Yes (in Files)</td><td>Yes (in Untouched sandbox)</td></tr>
+      <tr><th>Playback experience</th><td>Photos app</td><td>Bare files list in Files</td><td>Native gallery with swipe-to-play</td></tr>
+      <tr><th>Live Photo motion</th><td>Intact</td><td>Split into 2 files</td><td>Intact with paired files</td></tr>
+      <tr><th>Check copy is intact</th><td>Not needed</td><td>No</td><td>SHA-256, on demand</td></tr>
       <tr><th>Cost</th><td>Free</td><td>Free</td><td>One item free, then paid</td></tr>
     </tbody>
   </table>

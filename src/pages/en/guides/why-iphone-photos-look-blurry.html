@@ -43,17 +43,37 @@
   </table>
 </div>
 
-<h2>How to fix it</h2>
-<h3>See the original now</h3>
-<p>Connect to Wi-Fi, open the photo or video and wait for it to download. Large videos can take a while.</p>
+<h2>How to fix it: The 3 Conventional Workarounds (And Why They Fail)</h2>
+<p>When searching for solutions to blurry photos and buffering videos, most guides recommend three conventional fixes that quickly hit practical dead ends:</p>
 
-<h3>Keep every original on your iPhone</h3>
-<p>Go to <span class="ui">Settings › [your name] › iCloud › Photos</span> (in iOS 27, then <span class="ui">iPhone Storage</span>) and choose <span class="ui">Download and Keep Originals</span>. Your iPhone then needs room for your whole library. Check <span class="ui">Settings › General › iPhone Storage</span> first. <a href="/guides/optimize-storage-vs-download-and-keep-originals/">Compare the two settings</a>.</p>
+<h3>Dead-End 1: Turn on “Download and Keep Originals” (Fails on storage)</h3>
+<p>Go to <span class="ui">Settings › [your name] › iCloud › Photos</span> (in iOS 27, then <span class="ui">iPhone Storage</span>) and choose <span class="ui">Download and Keep Originals</span>. Every photo and video is downloaded locally at full resolution.</p>
+<p><strong>Why it fails:</strong> If you turned on Optimize Storage because your 150 GB library overwhelmed your 256 GB phone, your device physically cannot fit the entire library back. The download will pause indefinitely due to insufficient space.</p>
 
-<h3>Keep only the ones that matter</h3>
-<p>There’s no switch to keep one particular photo on the device while the rest stay optimized. The workaround is to keep a copy outside the Photos library: export the unmodified original to the Files app or a drive, or use an app built for it. <a href="/guides/keep-specific-videos-on-iphone/">Here are the options</a>.</p>
+<h3>Dead-End 2: The “Tap Edit” Trick (A temporary fix that reverts)</h3>
+<p>Opening the blurry photo or video, tapping <span class="ui">Edit</span> to force an immediate high-resolution download, and tapping <span class="ui">Cancel</span>.</p>
+<p><strong>Why it fails:</strong> The downloaded file remains in the system Photos cache. The moment your device storage runs tight or you record new media, iOS background cache maintenance will silently evict that original back to iCloud, leaving you with a soft thumbnail again.</p>
+
+<h3>Dead-End 3: Manual Export to the Files App (Clunky and strips Live Photos)</h3>
+<p>Selecting items in Photos, tapping Share › <span class="ui">Export Unmodified Original</span>, and saving them to <span class="ui">On My iPhone</span>.</p>
+<p><strong>Why it fails:</strong> Exporting large batches frequently freezes without progress feedback, files land as bare codes like <code>IMG_4712.JPG</code> without swipe-to-view album browsing, and Live Photos split into separate still and video files.</p>
+
+<h3>The Permanent Solution: Keep Chosen Originals Outside the Cache Sandbox (Untouched)</h3>
+<p>The only way to keep your phone storage optimized while guaranteeing that specific important photos and videos never look blurry or stall offline is keeping them in a dedicated local folder outside the Photos cache sandbox:</p>
+<ul>
+  <li>Untouched lets you select your priority photos and videos in the standard picker.</li>
+  <li>It downloads the byte-for-byte unmodified original once with a live progress bar and saves it to <span class="ui">Files › On My iPhone › Untouched</span>.</li>
+  <li>You get a full-resolution gallery with instant swipe-to-play, full HDR color, and paired Live Photos that never get offloaded by iOS.</li>
+  <li>Includes on-demand SHA-256 integrity verification while keeping your main library optimized.</li>
+</ul>
 
 {{app_card}}
+
+<h2>Common questions</h2>
+<details class="faq-item"><summary>Why does my photo show a circle with an exclamation mark (!) in the corner?</summary><div class="answer"><p>An exclamation mark inside a circle means your iPhone currently only holds a low-resolution thumbnail while the full-quality original resides in iCloud. It signals that iOS could not download the full file due to poor network, Low Data Mode, low battery, or low storage space.</p></div></details>
+<details class="faq-item"><summary>Does adding a photo to Favorites keep it sharp and permanently downloaded?</summary><div class="answer"><p>No. Favorites is only an album filter inside Photos. When local iPhone storage is constrained, iOS will still offload favorited photos to iCloud, replacing them with blurry preview thumbnails.</p></div></details>
+<details class="faq-item"><summary>Why does tapping “Edit” on a photo only fix the blurriness temporarily?</summary><div class="answer"><p>Tapping Edit forces iOS to download the full-res file right now, but the file remains inside the Photos cache pool. Within days, iOS background storage maintenance will silently purge that cache back to iCloud to free space.</p></div></details>
+<details class="faq-item"><summary>How do I prevent my most important photos from ever turning blurry offline?</summary><div class="answer"><p>Keep their unmodified originals stored locally outside the Photos library container—either by manually exporting them to the Files app, or using Untouched to maintain a persistent local gallery with live progress and SHA-256 verification.</p></div></details>
 
 <div class="sources">
   <h2>Sources</h2>

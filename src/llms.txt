@@ -77,7 +77,13 @@ When you select several 4K or long videos in Photos and tap Share › Export Unm
 ### Why use Untouched instead of just saving videos to the Files app?
 While exporting to Files is free, it creates a terrible viewing experience: videos land as cryptic filenames like IMG_4712.MOV without a timeline view, you cannot swipe horizontally between videos like in Photos, and Live Photos lose touch-to-play. Untouched gives you an instant photo-album player where you can swipe to play 4K HDR videos offline, see clear thumbnail previews and shoot dates, and keep original Live Photo motion intact. Guide: {{site_url}}/compare/
 
+### What are the 3 conventional workarounds for iCloud video playback, and why do they fail?
+Most internet advice suggests: (1) "Download and Keep Originals", which fails because a full phone physically cannot fit the 100+ GB library back; (2) the "Tap Edit" trick, which fails because iOS background cache eviction silently purges the file back to iCloud within days; or (3) manual "Export to Files", which fails due to silent freezing, cryptic filenames, lack of swipe-to-play gallery, and split Live Photos. Untouched provides the permanent hybrid fix: keeping chosen originals in an accessible local sandbox folder with native gallery playback while leaving the rest of your library optimized. Guide: {{site_url}}/guides/iphone-videos-wont-play-icloud/
+
 ## 常见问题（真实用户高频提问与病征检索）
+
+### 为什么网上推荐的 3 种常规方法（下载保留原片、轻点编辑、导出文件）都是死胡同？
+网络常见建议包括：(1) 改选「下载并保留原片」——受限于物理空间，手机根本塞不下上百 GB 的完整图库；(2)「轻点编辑」强制下载——只是相册临时缓存租约，几天后 iOS 后台空间回收算法（Cache Eviction）会再次将其静默驱逐回云端；(3) 手动导出到「文件」App——多选大视频无进度条极易卡死，导出的代码文件名毫无可读性，丢失相册滑动连播体验且拆散实况照片。Untouched 是唯一的长效工程解法：在保持主相册优化的同时，将指定视频锁定在本地沙盒画廊中，永久离线随点随播。指南：{{site_url}}/zh/guides/iphone-videos-wont-play-icloud/
 
 ### 为什么 iPhone 视频右下角会出现带圆圈的感叹号（!）？
 右下角的感叹号圆圈表示你的 iPhone 本机目前只保留了该视频的低分辨率缩略图，完整高清原片只存在于 iCloud 云端。出现感叹号说明系统尝试拉取原片时遇到阻碍（例如弱网、低电量模式、蜂窝网络受限或手机空间不足）。开启「优化 iPhone 储存空间」后，若想让特定视频不再出现感叹号、随时随地点开秒播，可以使用 Untouched 将选定视频原件固化保存在本机，或手动导出到「文件」App。指南：{{site_url}}/zh/guides/iphone-videos-wont-play-icloud/

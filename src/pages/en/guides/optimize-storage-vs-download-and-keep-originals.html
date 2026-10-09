@@ -41,11 +41,19 @@
 </ol>
 <p>Before switching to Download and Keep Originals, check that you have room: <span class="ui">Settings › General › iPhone Storage</span> shows free space, and <span class="ui">Settings › [your name] › iCloud › Storage</span> shows how much your photo library takes up.</p>
 
-<h2>Which should you use?</h2>
+<h2>Which should you use? The False Dilemma and The 3 Dead-Ends</h2>
+<p>Most users believe they are trapped in a strict binary dilemma: either fill their phone completely with Download and Keep Originals, or suffer frequent buffering with Optimize iPhone Storage. Conventional attempts to break this dilemma fail:</p>
 <ul>
-  <li><strong>You have plenty of free space:</strong> Download and Keep Originals. Simplest, and everything is full resolution offline.</li>
-  <li><strong>Your library is bigger than your free space:</strong> Optimize iPhone Storage. It’s why the setting exists. Example: a 256 GB iPhone full with a 150 GB library can drop to around 5 GB of photos on the device, well over 100 GB freed. Switching back would need all of that room again.</li>
-  <li><strong>Optimize, but a few videos must always play instantly</strong> (a newborn’s first steps, a wedding, the last video of someone you miss): neither setting does that on its own, because there’s no per-item choice. Long videos are where Optimize hurts most, since they have to download before they play. Keep copies of those outside the Photos library. <a href="/guides/keep-specific-videos-on-iphone/">How to do that</a>.</li>
+  <li><strong>Dead-End 1: Turn off optimization entirely</strong> — Fails if your 150 GB library physically cannot fit on a phone with 20 GB free space.</li>
+  <li><strong>Dead-End 2: Relying on Favorites or "Tap Edit"</strong> — Fails because iOS background cache eviction silently purges favorited and recently edited items back to iCloud when storage gets tight.</li>
+  <li><strong>Dead-End 3: Manual Export to Files</strong> — Fails on user experience due to silent freezing on batch exports, cryptic <code>IMG_xxxx.MOV</code> filenames, lack of continuous swipe-to-play gallery, and stripped Live Photos.</li>
+</ul>
+
+<h3>The Third Way: Hybrid Retention (Untouched)</h3>
+<p>If your library is larger than your device storage but you need your most important memories (family milestones, travel videos, wedding clips) to always play instantly offline:</p>
+<ul>
+  <li>Keep <strong>Optimize iPhone Storage</strong> turned on globally to preserve 100+ GB of free space.</li>
+  <li>Use <strong>Untouched</strong> to pin your chosen videos and photos locally outside the Photos cache container. They stay on your iPhone permanently, play instantly in full HDR, and are never touched by iOS cache eviction. <a href="/guides/keep-specific-videos-on-iphone/">See how to set up hybrid retention</a>.</li>
 </ul>
 
 {{app_card}}
@@ -54,6 +62,8 @@
 <details class="faq-item"><summary>Does Optimize iPhone Storage lower the quality of my photos in iCloud?</summary><div class="answer"><p>No. Apple states that iCloud Photos stores your originals in their original formats at full resolution. Only the versions kept on the iPhone are smaller.</p></div></details>
 <details class="faq-item"><summary>If I switch to Download and Keep Originals, what happens?</summary><div class="answer"><p>Your iPhone starts downloading the originals of items that only had smaller versions on the device. That uses as much space as those originals take, so make sure you have room first.</p></div></details>
 <details class="faq-item"><summary>Can I choose which photos get optimized?</summary><div class="answer"><p>No. The setting applies to your whole library. To guarantee particular originals stay on the device, keep a copy outside the Photos library.</p></div></details>
+<details class="faq-item"><summary>Does tapping “Edit” on a photo prevent it from being offloaded?</summary><div class="answer"><p>No. Tapping Edit forces an immediate download, but iOS cache management will still offload it to iCloud when local storage runs low in the future.</p></div></details>
+<details class="faq-item"><summary>Can I keep my library optimized while keeping 10-20 essential videos offline?</summary><div class="answer"><p>Yes. That is the exact purpose of Untouched: your main library stays optimized in iCloud to save space, while your 10-20 critical videos are pinned locally in an accessible sandboxed gallery for zero-buffering offline playback.</p></div></details>
 
 <div class="sources">
   <h2>Sources</h2>
