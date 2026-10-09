@@ -44,7 +44,19 @@
       ct = 'ai_codex';
     } else if (utm.indexOf('cursor') !== -1) {
       ct = 'ai_cursor';
-    } else if (utm.indexOf('agent') !== -1 || utm.indexOf('llmstxt') !== -1 || utm.indexOf('llms') !== -1) {
+    } else if (utm.indexOf('windsurf') !== -1) {
+      ct = 'ai_windsurf';
+    } else if (utm.indexOf('hermes') !== -1) {
+      ct = 'ai_hermes';
+    } else if (utm.indexOf('openclaw') !== -1) {
+      ct = 'ai_openclaw';
+    } else if (utm.indexOf('muse') !== -1) {
+      ct = 'ai_muse';
+    } else if (utm.indexOf('aider') !== -1) {
+      ct = 'ai_aider';
+    } else if (utm.indexOf('cline') !== -1 || utm.indexOf('roocode') !== -1 || utm.indexOf('roo') !== -1) {
+      ct = 'ai_cline';
+    } else if (utm.indexOf('agent') !== -1 || utm.indexOf('llmstxt') !== -1 || utm.indexOf('llms') !== -1 || utm.indexOf('mcp') !== -1 || utm.indexOf('bot') !== -1) {
       ct = 'ai_agent';
     }
     // B. AI Chat & Search Platforms (Referrer or UTM)
