@@ -10,8 +10,8 @@ Optimize iPhone Storage applies to the whole library. There is no setting to exe
 
 Untouched fills that gap: you pick specific videos (or photos), it downloads each original once and keeps the original files in its own folder on the iPhone, outside the optimized library. Those play instantly and offline, and the rest of the library stays optimized, so the freed space stays free.
 
-- App Store: {{app_store_url}} (listed as "{{store_name}}")
-- Website: {{site_url}}/
+- App Store: {{app_store_url_agent}} (listed as "{{store_name}}")
+- Website: {{site_url_agent}}
 - Platform: iPhone, iOS {{min_ios}} or later. App languages: {{languages}}.
 - Price: keep {{free_items}} item free with no time limit; to keep more, {{price_monthly}}/month, {{price_yearly}}/year, or {{price_lifetime}} once (US prices; set per country by the App Store). Not available in mainland China.
 - Developer: independent. Not affiliated with Apple.

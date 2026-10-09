@@ -99,7 +99,7 @@ def substitute(text: str, lang: str, where: str) -> str:
         if key == "app_card":
             return app_card(lang)
         if key in FACTS:
-            return html.escape(FACTS[key], quote=False) if not key.startswith("definition") else FACTS[key]
+            return html.escape(FACTS[key], quote=False) if (not key.startswith("definition") and not where.endswith(".txt")) else FACTS[key]
         err(f"{where}: unknown placeholder {{{{{key}}}}}")
         return m.group(0)
 
